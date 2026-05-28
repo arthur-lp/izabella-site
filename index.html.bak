@@ -140,7 +140,9 @@
            target="_blank"
            rel="noopener noreferrer"
            aria-label="Agendar consulta pelo WhatsApp — abre em nova janela">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
           Agendar Consulta
         </a>
       </nav>
@@ -174,7 +176,9 @@
          target="_blank"
          rel="noopener noreferrer"
          aria-label="Falar no WhatsApp — abre em nova janela">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
         Falar no WhatsApp
       </a>
     </div>
@@ -191,13 +195,13 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
             CRFa/MG — Registro Ativo
           </div>
-          <h1 class="hero__headline">O cuidado fonoaudiológico que seu familiar merece<br><em>— no conforto da sua casa</em></h1>
-          <p class="hero__subheadline">Formada pela UFMG com experiência nos hospitais de referência de BH (HC-UFMG e Hospital Risoleta), levo esse mesmo padrão de cuidado até a casa do seu familiar. Atendimento domiciliar especializado em adultos e idosos.</p>
+          <h1 class="hero__headline">Seu familiar merece cuidado especializado.<br><em>No conforto do lar de vocês.</em></h1>
+          <p class="hero__subheadline">Fonoaudiologia domiciliar para adultos e idosos em Belo Horizonte. Atendimento humanizado, formação UFMG, resultados reais.</p>
 
           <div class="hero__trust">
-            <span class="trust-badge">✓ Residência HC-UFMG</span>
-            <span class="trust-badge">✓ Hospital Risoleta Tolentino Neves</span>
-            <span class="trust-badge">✓ Atendimento Domiciliar BH</span>
+            <span class="trust-badge">✓ Formada pela UFMG</span>
+            <span class="trust-badge">✓ Residência no Hospital das Clínicas</span>
+            <span class="trust-badge">✓ Atendimento em BH e Região</span>
           </div>
 
           <div class="hero__ctas">
@@ -261,24 +265,15 @@
       <div class="container">
         <div class="section-header fade-in">
           <p class="overline">Sobre a Fonoaudióloga</p>
-          <h2 id="sobre-titulo">Cuidar do seu familiar<br><em>é a minha maior responsabilidade.</em></h2>
+          <h2 id="sobre-titulo">Formada para cuidar.<br><em>Escolhi o lar como meu hospital.</em></h2>
         </div>
 
         <div class="sobre__grid">
           <div class="sobre__text fade-in">
-            <h3 style="font-family: var(--font-heading); font-size: var(--text-h4); margin-bottom: var(--space-4); color: var(--color-primary-dark);">Quem sou</h3>
-            <p class="lead">Desde que entrei na Fonoaudiologia, na UFMG, sempre soube que queria trabalhar com adultos e idosos. Não por acaso — é nessa fase da vida que a comunicação e a alimentação podem se tornar os maiores desafios. E também as maiores vitórias.</p>
-            <p>Quando vejo uma pessoa voltar a comer com segurança depois de semanas com medo de engasgar, ou quando escuto um paciente pós-AVC dizer o nome do filho pela primeira vez em meses, sei por que escolhi essa profissão.</p>
-
-            <h3 style="font-family: var(--font-heading); font-size: var(--text-h4); margin: var(--space-8) 0 var(--space-4); color: var(--color-primary-dark);">Experiência hospitalar que faz a diferença</h3>
-            <p>Minha formação vai além da graduação. Fiz Residência Multiprofissional em Saúde do Adulto e do Idoso em dois dos hospitais de referência de Minas Gerais: o Hospital das Clínicas da UFMG e o Hospital Risoleta Tolentino Neves.</p>
-            <p>Ali, atendi centenas de pacientes em momentos críticos — UTIs, enfermarias de neurologia, ambulatórios oncológicos. Vi de perto como a disfagia grave pode isolar uma pessoa. Como a perda da voz apaga a identidade de alguém. E aprendi a lidar com casos complexos: disfagia pós-AVC, Parkinson, Alzheimer, laringectomia, cuidados paliativos.</p>
-            <p><strong>Essa experiência hospitalar é exatamente o que levo para o atendimento domiciliar.</strong> Não é um cuidado inferior — é o mesmo padrão técnico, a mesma seriedade, com uma vantagem enorme: acontece no ambiente familiar, com a presença de quem o paciente ama.</p>
-
-            <h3 style="font-family: var(--font-heading); font-size: var(--text-h4); margin: var(--space-8) 0 var(--space-4); color: var(--color-primary-dark);">Por que home care?</h3>
-            <p>Porque o cuidado mais poderoso acontece quando o profissional vai até o paciente — e não o contrário.</p>
-            <p>No domicílio, avalio como seu familiar realmente come, fala e se comunica no dia a dia. Não é uma simulação em consultório. É a vida real. E isso torna o tratamento muito mais preciso.</p>
-            <p>Além disso, vocês — família e cuidadores — podem acompanhar cada sessão, aprender as técnicas e dar continuidade ao trabalho comigo. <strong>Você não fica de fora. Você faz parte do tratamento.</strong></p>
+            <p class="lead">Desde a graduação na UFMG, aprendi que a reabilitação vai muito além de técnicas clínicas. É sobre devolver a uma pessoa a capacidade de engolir com segurança, de comunicar o que sente, de dizer "eu te amo" com clareza.</p>
+            <p>Na Residência Multiprofissional do Hospital das Clínicas (HC-UFMG) e do Hospital Risoleta Tolentino Neves, atendi centenas de pacientes nos momentos mais críticos — UTIs, enfermarias de neurologia, ambulatórios oncológicos. Vi de perto o quanto a disfagia pode isolar uma pessoa. O quanto uma voz comprometida apaga a identidade de alguém.</p>
+            <p>E foi ali que entendi: o cuidado mais poderoso acontece quando o profissional vai até o paciente, e não o contrário.</p>
+            <p>Hoje levo essa expertise hospitalar até o conforto do seu lar. Avalio, planejo e acompanho cada caso com a mesma seriedade de um grande hospital — mas com a humanidade de quem entende que você está cuidando de alguém que ama.</p>
 
             <blockquote class="sobre__quote">
               <p>"Cada atendimento é único como a pessoa que cuido."</p>
@@ -295,15 +290,15 @@
           </div>
 
           <div class="sobre__credentials fade-in">
-            <h3 class="sobre__cred-title">Formação & Experiência</h3>
+            <h3 class="sobre__cred-title">Formação &amp; Experiência</h3>
             <ol class="timeline" aria-label="Linha do tempo de formação e experiência">
               <li class="timeline__item">
                 <div class="timeline__icon" aria-hidden="true">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
                 </div>
                 <div class="timeline__content">
-                  <strong>2019 — Graduação em Fonoaudiologia — UFMG</strong>
-                  <span>Universidade Federal de Minas Gerais</span>
+                  <strong>Graduação em Fonoaudiologia</strong>
+                  <span>Universidade Federal de Minas Gerais (UFMG)</span>
                 </div>
               </li>
               <li class="timeline__item">
@@ -311,7 +306,7 @@
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 </div>
                 <div class="timeline__content">
-                  <strong>2023–2024 — Residência Multiprofissional em Saúde do Adulto e do Idoso</strong>
+                  <strong>Residência Multiprofissional em Saúde do Adulto e do Idoso</strong>
                   <span>Hospital das Clínicas UFMG + Hospital Risoleta Tolentino Neves</span>
                 </div>
               </li>
@@ -320,8 +315,8 @@
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                 </div>
                 <div class="timeline__content">
-                  <strong>Estágio em Reabilitação Neurológica</strong>
-                  <span>Prosense — Alta Tecnologia em Fonoaudiologia</span>
+                  <strong>Estágio em Alta Tecnologia</strong>
+                  <span>Prosense — Belo Horizonte</span>
                 </div>
               </li>
               <li class="timeline__item">
@@ -330,7 +325,7 @@
                 </div>
                 <div class="timeline__content">
                   <strong>Capacitação em Cuidados Paliativos</strong>
-                  <span>Hospital Risoleta Tolentino Neves — Formação em conforto e dignidade</span>
+                  <span>Formação especializada em conforto e dignidade</span>
                 </div>
               </li>
               <li class="timeline__item">
@@ -338,40 +333,13 @@
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div class="timeline__content">
-                  <strong>Atualmente — Atendimento Domiciliar Especializado</strong>
-                  <span>BH e região metropolitana — Foco em adultos e idosos + Atuação hospitalar</span>
+                  <strong>Atendimento Domiciliar</strong>
+                  <span>BH e região metropolitana — foco em adultos e idosos</span>
                 </div>
               </li>
             </ol>
 
-            <!-- Badges de credibilidade -->
-            <div style="margin-top: var(--space-10);">
-              <h4 style="font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-text-muted); margin-bottom: var(--space-4);">Credenciais</h4>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
-                <div style="padding: var(--space-3); background: var(--color-primary-tint); border-radius: var(--radius-md); text-align: center;">
-                  <div style="font-size: var(--text-lg); margin-bottom: var(--space-1);">🏥</div>
-                  <div style="font-size: var(--text-xs); font-weight: 600; color: var(--color-primary-dark);">HC-UFMG</div>
-                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Hospital de Referência</div>
-                </div>
-                <div style="padding: var(--space-3); background: var(--color-primary-tint); border-radius: var(--radius-md); text-align: center;">
-                  <div style="font-size: var(--text-lg); margin-bottom: var(--space-1);">🏥</div>
-                  <div style="font-size: var(--text-xs); font-weight: 600; color: var(--color-primary-dark);">Hospital Risoleta</div>
-                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Tolentino Neves</div>
-                </div>
-                <div style="padding: var(--space-3); background: var(--color-primary-tint); border-radius: var(--radius-md); text-align: center;">
-                  <div style="font-size: var(--text-lg); margin-bottom: var(--space-1);">🎓</div>
-                  <div style="font-size: var(--text-xs); font-weight: 600; color: var(--color-primary-dark);">Residência</div>
-                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Adulto e Idoso</div>
-                </div>
-                <div style="padding: var(--space-3); background: var(--color-primary-tint); border-radius: var(--radius-md); text-align: center;">
-                  <div style="font-size: var(--text-lg); margin-bottom: var(--space-1);">🏠</div>
-                  <div style="font-size: var(--text-xs); font-weight: 600; color: var(--color-primary-dark);">Atendimento</div>
-                  <div style="font-size: var(--text-xs); color: var(--color-text-muted);">Domiciliar BH</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="credential-badge" role="note" aria-label="Informação de credencial profissional" style="margin-top: var(--space-6);">
+            <div class="credential-badge" role="note" aria-label="Informação de credencial profissional">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polyline points="20 6 9 17 4 12"/></svg>
               Registro profissional ativo no CRFa/MG (Conselho Regional de Fonoaudiologia)
             </div>
@@ -385,8 +353,8 @@
       <div class="container">
         <div class="section-header fade-in">
           <p class="overline">Especialidades</p>
-          <h2 id="especialidades-titulo">Reconheça os sinais.<br><em>Existe tratamento — e eu posso ajudar.</em></h2>
-          <p class="section-subtitle">Muitas famílias só buscam a fonoaudiologia quando o problema já está avançado. Conheça os sinais de alerta e o que posso fazer pelo seu familiar.</p>
+          <h2 id="especialidades-titulo">Cada condição tem uma abordagem.<br><em>Cada pessoa, um cuidado único.</em></h2>
+          <p class="section-subtitle">Trabalho com adultos e idosos em seis áreas de alta complexidade — sempre com avaliação personalizada e plano terapêutico individual.</p>
         </div>
 
         <div class="especialidades__grid" role="list">
@@ -397,10 +365,10 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
             </div>
             <h3 class="card-specialty__title" id="esp-disfagia">Disfagia<br><small>Dificuldade para Engolir</small></h3>
-            <p class="card-specialty__body">Seu familiar está engasgando com frequência, evitando comer, ou perdendo peso sem motivo aparente? A disfagia (dificuldade para engolir) pode ser perigosa — o alimento pode ir para os pulmões sem que a pessoa perceba. Avalio e trato com segurança, no conforto da casa, para que comer volte a ser um prazer.</p>
+            <p class="card-specialty__body">Engolir deveria ser automático. Quando deixa de ser, cada refeição vira uma fonte de angústia. A disfagia aparece após AVC, Parkinson, Alzheimer, câncer de cabeça e pescoço, e outras condições neurológicas. Meu objetivo é devolver a segurança e o prazer de comer da forma mais natural possível, prevenindo engasgos e pneumonias.</p>
             <div class="card-specialty__alert" role="note">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-              Tosse ou engasgos nas refeições? Entre em contato agora.
+              Tosse durante ou após as refeições? Entre em contato.
             </div>
           </article>
 
@@ -410,7 +378,7 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M9.5 2A2.5 2.5 0 017 4.5v0A2.5 2.5 0 019.5 7h5A2.5 2.5 0 0117 4.5v0A2.5 2.5 0 0114.5 2h-5z"/><path d="M9.5 7v10"/><path d="M14.5 7v10"/><path d="M7 9.5H4.5A2.5 2.5 0 002 12v0a2.5 2.5 0 002.5 2.5H7"/><path d="M17 9.5h2.5A2.5 2.5 0 0122 12v0a2.5 2.5 0 01-2.5 2.5H17"/><path d="M9.5 17A2.5 2.5 0 007 19.5v0A2.5 2.5 0 009.5 22h5a2.5 2.5 0 002.5-2.5v0a2.5 2.5 0 00-2.5-2.5h-5z"/></svg>
             </div>
             <h3 class="card-specialty__title" id="esp-neuro">Neurologia<br><small>Reabilitação Pós-AVC e Doenças Neurodegenerativas</small></h3>
-            <p class="card-specialty__body">Após um AVC, Parkinson, Alzheimer ou outra condição neurológica, a comunicação e a alimentação mudam — às vezes de forma drástica, às vezes gradualmente. Acompanho a reabilitação com paciência e técnica, trabalhando para recuperar qualidade de vida. O ambiente familiar favorece muito essa recuperação.</p>
+            <p class="card-specialty__body">Um AVC pode mudar tudo em segundos. Parkinson e Alzheimer chegam mais devagar, mas também roubam a comunicação e a alimentação. Trabalho com adultos em todas as fases da reabilitação neurológica — das primeiras semanas pós-AVC até o acompanhamento de longo prazo. O ambiente familiar favorece a recuperação.</p>
             <div class="card-specialty__badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
               Experiência: Residência no HC-UFMG (Neurologia)
@@ -422,8 +390,8 @@
             <div class="card-specialty__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
             </div>
-            <h3 class="card-specialty__title" id="esp-voz">Voz<br><small>Rouquidão, Cansaço Vocal e Alterações</small></h3>
-            <p class="card-specialty__body">Rouquidão persistente, perda de voz, fadiga ao falar — esses sinais merecem atenção. Podem ter causas neurológicas, cirúrgicas ou funcionais, e se tratados cedo evitam um agravamento. Avalio e trato alterações vocais em adultos e idosos no domicílio, com avaliação completa e plano adaptado ao dia a dia.</p>
+            <h3 class="card-specialty__title" id="esp-voz">Voz<br><small>Porque a sua voz conta sua história</small></h3>
+            <p class="card-specialty__body">A voz é a forma como nos expressamos e nos conectamos com quem amamos. Rouquidão persistente, cansaço vocal, voz fraca ou apagada podem ter causas diversas: neurológicas, cirúrgicas, oncológicas ou funcionais. Faço avaliação vocal completa e crio programas de reabilitação adaptados à sua rotina.</p>
             <div class="card-specialty__badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               Sabia? Alterações de voz podem ser sinal de condições neurológicas.
@@ -435,8 +403,8 @@
             <div class="card-specialty__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
             </div>
-            <h3 class="card-specialty__title" id="esp-linguagem">Linguagem<br><small>Dificuldade para Falar, Entender ou se Expressar</small></h3>
-            <p class="card-specialty__body">Dificuldade para falar, entender ou se expressar após lesão neurológica pode ser devastante — tanto para o paciente quanto para a família. Trabalho a reabilitação da comunicação para que seu familiar volte a interagir com quem ama. Cada estratégia é adaptada à história, aos hábitos e às relações de cada pessoa.</p>
+            <h3 class="card-specialty__title" id="esp-linguagem">Linguagem<br><small>Reconectando Pessoas e Palavras</small></h3>
+            <p class="card-specialty__body">Quando alguém tem dificuldade de encontrar as palavras, de falar com clareza ou de entender o que ouve, chamamos de afasia. Isso pode acontecer após um AVC ou como parte de uma doença neurológica. Meu trabalho é criar pontes de comunicação — usando palavras, imagens, gestos e estratégias que façam sentido para aquela pessoa específica.</p>
             <div class="card-specialty__badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
               A reabilitação começa com escuta — da pessoa e da família.
@@ -448,8 +416,8 @@
             <div class="card-specialty__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
             </div>
-            <h3 class="card-specialty__title" id="esp-oncologia">Oncologia<br><small>Pacientes em Tratamento e Laringectomizados</small></h3>
-            <p class="card-specialty__body">Pacientes laringectomizados e em tratamento oncológico têm necessidades fonoaudiológicas específicas — na voz, na comunicação e na alimentação. Ofereço acompanhamento especializado e humanizado. O atendimento domiciliar é especialmente valioso nesse contexto, poupando deslocamentos exaustivos e reduzindo exposição a infecções.</p>
+            <h3 class="card-specialty__title" id="esp-oncologia">Oncologia<br><small>Reabilitação Após Câncer de Cabeça e Pescoço</small></h3>
+            <p class="card-specialty__body">Cirurgias no pescoço e boca como parte do tratamento do câncer trazem desafios profundos para a voz e a alimentação. Tenho capacitação específica para reabilitação de laringectomizados, incluindo métodos alternativos de comunicação vocal e adaptações na alimentação. O atendimento domiciliar é especialmente valioso nesse contexto.</p>
             <div class="card-specialty__badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
               Cuidado especializado, no tempo certo, no lugar certo.
@@ -461,8 +429,8 @@
             <div class="card-specialty__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M17 8C8 10 5.9 16.17 3.82 19.11a2 2 0 001.61 3.11A11 11 0 0121 6l-4 2z"/></svg>
             </div>
-            <h3 class="card-specialty__title" id="esp-paliativos">Cuidados Paliativos<br><small>Conforto e Dignidade em Momentos Delicados</small></h3>
-            <p class="card-specialty__body">Em momentos delicados, cuido da comunicação e da alimentação segura para garantir o máximo de conforto e dignidade ao paciente e à família. A fonoaudiologia paliativa ajuda a manter o prazer de comer, a conexão com as pessoas amadas e a qualidade de vida — até o fim. Atuo como parte da equipe de cuidado.</p>
+            <h3 class="card-specialty__title" id="esp-paliativos">Cuidados Paliativos<br><small>Conforto e Dignidade até o Final</small></h3>
+            <p class="card-specialty__body">Nos cuidados paliativos, o objetivo é garantir qualidade de vida, conforto e dignidade. A fonoaudiologia tem papel fundamental: ajudar a manter a comunicação pelo maior tempo possível, adaptar a alimentação para que comer continue sendo um prazer, e orientar a família sobre como interagir melhor com seu ente querido.</p>
             <div class="card-specialty__badge">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
               Trabalhamos juntos — você, sua família e a equipe de cuidado.
@@ -472,7 +440,7 @@
         </div>
 
         <div class="section-cta fade-in">
-          <p>Não tem certeza de qual especialidade se aplica ao caso do seu familiar? Me conta o que está acontecendo — eu te oriento sem compromisso.</p>
+          <p>Não tem certeza de qual especialidade se aplica ao seu caso? Me conta o que está acontecendo — eu te oriento.</p>
           <a href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Tenho%20uma%20d%C3%BAvida%20sobre%20qual%20especialidade%20se%20aplica%20ao%20meu%20caso."
              class="btn btn-whatsapp"
              target="_blank"
@@ -489,8 +457,8 @@
       <div class="container">
         <div class="section-header fade-in">
           <p class="overline">Por que Atendimento Domiciliar?</p>
-          <h2 id="homecare-titulo">A mesma qualidade hospitalar.<br><em>Com a vantagem do lar de vocês.</em></h2>
-          <p class="section-subtitle">Atendimento domiciliar não é segunda opção — para muitos adultos e idosos, é a escolha mais inteligente, humana e eficaz. Veja por quê a família ganha tanto quanto o paciente.</p>
+          <h2 id="homecare-titulo">O hospital veio até você.<br><em>E isso faz toda a diferença.</em></h2>
+          <p class="section-subtitle">Atendimento domiciliar não é segunda opção — para muitos adultos e idosos, é a escolha mais inteligente, humana e eficaz.</p>
         </div>
 
         <div class="homecare__grid" role="list">
@@ -500,8 +468,8 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <div class="card-benefit__text">
-              <h3>Sem deslocamento</h3>
-              <p>Não precisa tirar seu familiar de casa nem enfrentar filas ou congestionamentos. Eu venho até vocês com todos os equipamentos necessários para avaliação e tratamento. Simples assim.</p>
+              <h3>No ambiente familiar, a recuperação é mais rápida</h3>
+              <p>Estudos mostram que pacientes se recuperam melhor em ambientes familiares. A casa tem os cheiros, sons e rostos que o cérebro reconhece. Para condições neurológicas, isso não é detalhe — é parte da terapia.</p>
             </div>
           </article>
 
@@ -510,18 +478,8 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
             </div>
             <div class="card-benefit__text">
-              <h3>Mesma qualidade hospitalar</h3>
-              <p>Fiz Residência no HC-UFMG e no Hospital Risoleta — dois dos maiores hospitais de MG. Esse mesmo padrão técnico e clínico vai até a sua casa. Não é um cuidado inferior: é o mesmo, no ambiente certo.</p>
-            </div>
-          </article>
-
-          <article class="card-benefit fade-in" role="listitem">
-            <div class="card-benefit__icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            </div>
-            <div class="card-benefit__text">
-              <h3>A família participa</h3>
-              <p>No domicílio, você pode acompanhar cada sessão, entender o que está sendo trabalhado e aprender a ajudar nos dias em que não estou lá. Você não fica de fora — você faz parte do tratamento.</p>
+              <h3>Elimine o desgaste de ida e volta</h3>
+              <p>Para idosos frágeis, pacientes em recuperação de AVC ou em cuidados paliativos, o deslocamento até uma clínica é exaustivo — e muitas vezes impossível. O atendimento domiciliar garante que a terapia aconteça regularmente, sem interrupções.</p>
             </div>
           </article>
 
@@ -530,8 +488,18 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
             <div class="card-benefit__text">
-              <h3>Ambiente seguro e familiar</h3>
-              <p>Pacientes evoluem mais rápido no ambiente que conhecem e amam. Os cheiros, sons e rostos familiares fazem parte do tratamento — especialmente para condições neurológicas. O conforto de casa é terapêutico.</p>
+              <h3>Avaliação no contexto real de vida</h3>
+              <p>Na sua casa, consigo observar como seu familiar realmente come, fala e se comunica no dia a dia. Posso adaptar orientações à cozinha de vocês, à mesa onde comem, aos hábitos reais da família. Torna o tratamento mais preciso e eficaz.</p>
+            </div>
+          </article>
+
+          <article class="card-benefit fade-in" role="listitem">
+            <div class="card-benefit__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="card-benefit__text">
+              <h3>Toda a família aprende e participa</h3>
+              <p>O atendimento domiciliar permite que familiares e cuidadores participem das sessões e aprendam a dar continuidade às orientações entre as consultas. Você não fica de fora — você faz parte do tratamento.</p>
             </div>
           </article>
 
@@ -540,8 +508,8 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div class="card-benefit__text">
-              <h3>Continuidade do cuidado</h3>
-              <p>Acompanho cada etapa da recuperação, sem trocar de profissional a cada internação ou consulta. Sou a referência de vocês — conheço a história, os hábitos e o ritmo do seu familiar. Essa relação contínua faz diferença.</p>
+              <h3>Proteção para quem tem imunidade reduzida</h3>
+              <p>Pacientes oncológicos, imunossuprimidos ou em recuperação hospitalar estão mais vulneráveis a infecções. Evitar clínicas e hospitais durante a reabilitação é uma decisão médica inteligente. O atendimento em casa oferece cuidado de qualidade com muito menos risco.</p>
             </div>
           </article>
 
@@ -550,8 +518,8 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </div>
             <div class="card-benefit__text">
-              <h3>Agenda flexível</h3>
-              <p>Horários adaptados à rotina da família, inclusive para quem ainda trabalha e precisa cuidar de um familiar. Sem burocracia de agendamento, sem filas de espera — converso diretamente com vocês pelo WhatsApp.</p>
+              <h3>Uma fonoaudióloga só para o seu familiar</h3>
+              <p>Não há agenda lotada, espera na recepção ou trocas de profissional. Sou eu, Izabella, que venho em todas as sessões. Conheço a história, os hábitos e o ritmo do seu familiar. Construímos uma relação de confiança que só o atendimento domiciliar proporciona.</p>
             </div>
           </article>
 
@@ -642,8 +610,8 @@
       <div class="container">
         <div class="cta-banner fade-in">
           <p class="overline" style="color: var(--color-cta-tint);">Atendimento Domiciliar em BH e Região</p>
-          <h2 id="cta-titulo">Pronto para cuidar melhor do seu familiar?</h2>
-          <p>Entre em contato agora. Sem compromisso — vamos conversar sobre o caso do seu familiar e ver juntos o melhor caminho.</p>
+          <h2 id="cta-titulo">Pronto(a) para dar o próximo passo?</h2>
+          <p>A primeira conversa é sempre sem compromisso. Me conta o que está acontecendo e vejo como posso ajudar.</p>
           <div class="cta-banner__buttons">
             <a href="https://wa.me/5531992024967?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Izabella%20sobre%20atendimento%20fonoaudiol%C3%B3gico."
                class="btn btn-cta"
@@ -669,78 +637,12 @@
       </div>
     </section>
 
-    <!-- ========== 7. DEPOIMENTOS ========== -->
-    <section class="section section-warm" id="depoimentos" aria-labelledby="depoimentos-titulo">
-      <div class="container">
-        <div class="section-header fade-in">
-          <p class="overline">Depoimentos</p>
-          <h2 id="depoimentos-titulo">Famílias que confiaram<br><em>no cuidado da Izabella.</em></h2>
-          <p class="section-subtitle">Histórias reais de quem já passou pelo mesmo momento que você está vivendo agora.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6); margin-top: var(--space-10);" role="list">
-
-          <!-- SUBSTITUIR POR DEPOIMENTO REAL -->
-          <article style="background: var(--color-bg); border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-card); display: flex; flex-direction: column; gap: var(--space-4);" class="fade-in" role="listitem" aria-label="Depoimento de Mariana C., filha de paciente pós-AVC">
-            <div style="display: flex; gap: var(--space-1); color: #F59E0B;" aria-label="5 estrelas">
-              ★★★★★
-            </div>
-            <p style="font-size: var(--text-base); line-height: var(--leading-loose); color: var(--color-text-body); font-style: italic;">
-              "Minha mãe teve um AVC em março e ficou com dificuldade de engolir e de falar. Eu estava desesperada, não sabia por onde começar. A Izabella veio até nossa casa, explicou tudo com paciência, e em poucas semanas já víamos evolução. Hoje minha mãe come com muito mais segurança e consegue se comunicar com a gente. A Izabella não é só profissional — ela cuidou de nós também."
-            </p>
-            <div style="display: flex; align-items: center; gap: var(--space-3); margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--color-border);">
-              <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-primary-tint); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--color-primary); font-size: var(--text-lg);">M</div>
-              <div>
-                <p style="font-weight: 600; color: var(--color-text-primary); margin: 0; font-size: var(--text-sm);">Mariana C.</p>
-                <p style="color: var(--color-text-muted); margin: 0; font-size: var(--text-xs);">Filha — Pampulha, BH</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- SUBSTITUIR POR DEPOIMENTO REAL -->
-          <article style="background: var(--color-bg); border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-card); display: flex; flex-direction: column; gap: var(--space-4);" class="fade-in" role="listitem" aria-label="Depoimento de Roberto A., cônjuge de paciente com Parkinson">
-            <div style="display: flex; gap: var(--space-1); color: #F59E0B;" aria-label="5 estrelas">
-              ★★★★★
-            </div>
-            <p style="font-size: var(--text-base); line-height: var(--leading-loose); color: var(--color-text-body); font-style: italic;">
-              "Minha esposa tem Parkinson e a voz dela foi ficando cada vez mais baixinha — a ponto de eu mal conseguir ouvi-la. A Izabella começou o atendimento aqui em casa e foi incrível. Ela explica tudo com clareza, me ensinou como posicionar minha esposa durante as refeições e como ajudar nos exercícios. A evolução foi além do que eu esperava. Me sinto muito mais seguro agora."
-            </p>
-            <div style="display: flex; align-items: center; gap: var(--space-3); margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--color-border);">
-              <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-secondary-light); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--color-secondary-dark); font-size: var(--text-lg);">R</div>
-              <div>
-                <p style="font-weight: 600; color: var(--color-text-primary); margin: 0; font-size: var(--text-sm);">Roberto A.</p>
-                <p style="color: var(--color-text-muted); margin: 0; font-size: var(--text-xs);">Esposo — Contagem, MG</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- SUBSTITUIR POR DEPOIMENTO REAL -->
-          <article style="background: var(--color-bg); border-radius: var(--radius-xl); padding: var(--space-8); box-shadow: var(--shadow-card); display: flex; flex-direction: column; gap: var(--space-4);" class="fade-in" role="listitem" aria-label="Depoimento de Felipe D., filho de paciente com disfagia">
-            <div style="display: flex; gap: var(--space-1); color: #F59E0B;" aria-label="5 estrelas">
-              ★★★★★
-            </div>
-            <p style="font-size: var(--text-base); line-height: var(--leading-loose); color: var(--color-text-body); font-style: italic;">
-              "Meu pai estava engasgando toda vez que comia. Ficávamos com medo de cada refeição. Pesquisei bastante e encontrei a Izabella. Desde a primeira visita, ela trouxe tranquilidade para toda a família — explicou o que estava acontecendo, quais os riscos e o que fazer. Hoje meu pai come de forma muito mais segura e até voltou a comer algumas coisas que tinha abandonado. Gratidão enorme."
-            </p>
-            <div style="display: flex; align-items: center; gap: var(--space-3); margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--color-border);">
-              <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--color-primary-tint); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--color-primary); font-size: var(--text-lg);">F</div>
-              <div>
-                <p style="font-weight: 600; color: var(--color-text-primary); margin: 0; font-size: var(--text-sm);">Felipe D.</p>
-                <p style="color: var(--color-text-muted); margin: 0; font-size: var(--text-xs);">Filho — Savassi, BH</p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 8. FAQ ========== -->
+    <!-- ========== 7. FAQ ========== -->
     <section class="section" id="faq" aria-labelledby="faq-titulo">
       <div class="container">
         <div class="section-header fade-in">
           <p class="overline">Perguntas Frequentes</p>
-          <h2 id="faq-titulo">As dúvidas que toda família tem.<br><em>Aqui estão as respostas.</em></h2>
+          <h2 id="faq-titulo">Tem dúvidas?<br><em>Aqui estão as respostas mais comuns.</em></h2>
           <p class="section-subtitle">E se a sua pergunta não estiver aqui, me manda uma mensagem. Adoro conversar antes da primeira consulta.</p>
         </div>
 
@@ -748,101 +650,101 @@
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
-              Como sei se meu familiar precisa de fonoaudióloga?
+              O atendimento é coberto pelo plano de saúde?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-1" role="region" aria-labelledby="faq-btn-1" aria-hidden="true">
-              <p>Alguns sinais de alerta: engasgar com frequência durante as refeições, tossir muito ao comer ou beber, perder peso sem motivo aparente, ter dificuldade de falar ou ser entendido, voz rouca ou muito fraca, dificuldade de entender o que dizem, ou qualquer mudança na comunicação ou alimentação após um AVC, diagnóstico de Parkinson, Alzheimer ou câncer. Se você reconheceu algum desses sinais, vale muito a pena me contactar — uma avaliação pode esclarecer tudo.</p>
+              <p>Atualmente meu atendimento é particular — isso significa que você agenda diretamente comigo, sem burocracia de autorização e sem esperar na fila de um convênio. Ofereço recibo de consulta para reembolso: muitos planos de saúde reembolsam sessões de fonoaudiologia domiciliar. Recomendo verificar com o seu plano antes de agendar.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
-              O atendimento em casa é tão bom quanto no hospital?
+              Você atende em qual região de Belo Horizonte?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-2" role="region" aria-labelledby="faq-btn-2" aria-hidden="true">
-              <p>Sim — e em muitos aspectos é ainda melhor. Minha formação inclui Residência no HC-UFMG e no Hospital Risoleta, dois dos maiores hospitais de Minas Gerais. Levo o mesmo padrão técnico para o domicílio. Além disso, o atendimento em casa tem vantagens que o hospital não tem: avalio o paciente no contexto real onde ele vive, a família pode participar, e o ambiente familiar favorece a recuperação neurológica. Para adultos e idosos, evitar deslocamentos cansativos também é um ganho real.</p>
+              <p>Atendo em Belo Horizonte e região metropolitana. Para confirmar se atendo no seu bairro ou cidade, basta me mandar uma mensagem no WhatsApp — geralmente respondo em poucas horas. Faço questão de atender onde for viável para não comprometer a regularidade do tratamento.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
-              Quais equipamentos você leva para casa?
+              Como funciona a primeira consulta?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-3" role="region" aria-labelledby="faq-btn-3" aria-hidden="true">
-              <p>Levo tudo que for necessário para avaliação e tratamento: materiais para avaliação de deglutição, recursos para reabilitação de voz e linguagem, utensílios adaptados, entre outros. Na maioria dos casos, a família não precisa ter nenhum equipamento especial em casa. Eventualmente posso recomendar recursos simples — como espessantes alimentares, encontrados em farmácias — mas sempre em itens acessíveis.</p>
+              <p>A primeira consulta é uma avaliação completa. Chego na sua casa, converso com o paciente e com a família, faço os testes necessários para cada especialidade e explico tudo de forma clara — o que encontrei, quais são os objetivos e como o tratamento vai funcionar. Saio com um plano terapêutico personalizado e você sabe exatamente o que esperar das próximas sessões.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
-              Qual a frequência ideal das sessões?
+              Quantas vezes por semana preciso agendar? Quanto tempo dura o tratamento?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-4" role="region" aria-labelledby="faq-btn-4" aria-hidden="true">
-              <p>Depende da condição e do objetivo. Em geral, começo com 2 sessões por semana e ajusto conforme a evolução. Casos neurológicos agudos (logo após um AVC, por exemplo) costumam precisar de mais frequência no início. Reabilitação de voz pode ser menos frequente. Defino o plano na avaliação inicial e vou adaptando com o tempo. Sou honesta sobre as expectativas desde o primeiro encontro.</p>
+              <p>Depende muito da condição e do objetivo. Em geral, começo com 2 sessões por semana e ajusto conforme a evolução. Para condições neurológicas agudas, pode ser necessário mais frequência no início. Para reabilitação de voz, pode ser menos. Quanto à duração total do tratamento, é muito variável — alguns casos resolvem em meses, outros precisam de acompanhamento contínuo. Sou honesta sobre as expectativas desde o primeiro dia.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
-              Atende por plano de saúde ou convênio?
+              Preciso ter algum equipamento especial em casa?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-5" role="region" aria-labelledby="faq-btn-5" aria-hidden="true">
-              <p>Atualmente o atendimento é particular — isso significa que você agenda diretamente comigo, sem burocracia de autorização e sem lista de espera. Emito recibo de consulta para reembolso: muitos planos de saúde reembolsam sessões de fonoaudiologia domiciliar. Recomendo verificar com o seu plano antes de agendar — posso ajudar com as informações que você vai precisar apresentar.</p>
+              <p>Na maioria dos casos, não! Levo o que for necessário para a avaliação e o tratamento. Eventualmente posso recomendar materiais simples para exercícios em casa entre as sessões — e sempre são coisas acessíveis, nada de equipamento caro. Em casos específicos, posso indicar recursos como espessantes alimentares, que são encontrados em farmácias.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-6" id="faq-btn-6">
-              Quanto custa uma sessão?
+              Qual a diferença entre atendimento domiciliar e em uma clínica?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-6" role="region" aria-labelledby="faq-btn-6" aria-hidden="true">
-              <p>O valor varia conforme o tipo de atendimento (avaliação inicial ou sessão de acompanhamento), a especialidade e a região/distância. Me mande uma mensagem no WhatsApp informando o bairro ou cidade e o tipo de atendimento que procura — respondo com os valores rapidinho, sem compromisso. Prefiro conversar antes de apresentar qualquer número.</p>
+              <p>A qualidade técnica é a mesma — às vezes, superior. A diferença é o contexto: no domiciliar, avalio e trato o paciente no ambiente onde ele realmente vive. Vejo como come na mesa de jantar de vocês, como se comunica com quem ama, quais são os obstáculos reais do dia a dia. Isso torna o tratamento mais preciso e eficaz. Além disso, familiares participam das sessões e aprendem a continuar o trabalho comigo.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-7" id="faq-btn-7">
-              Como funciona a primeira avaliação?
+              Posso confiar no atendimento? Você tem registro no conselho?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-7" role="region" aria-labelledby="faq-btn-7" aria-hidden="true">
-              <p>A primeira consulta é uma avaliação completa. Chego na sua casa, converso com o paciente e com a família (é muito importante que a família participe!), faço os testes necessários para cada especialidade e explico tudo com clareza — o que encontrei, quais são os objetivos e como o tratamento vai funcionar. Você sai com um plano terapêutico personalizado e sabe exatamente o que esperar das próximas sessões. Sem surpresas.</p>
+              <p>Sim! Sou formada pela UFMG (Universidade Federal de Minas Gerais), com Residência Multiprofissional no Hospital das Clínicas UFMG e no Hospital Risoleta Tolentino Neves — dois dos maiores hospitais de Minas Gerais. Tenho registro ativo no CRFa/MG (Conselho Regional de Fonoaudiologia). Se quiser, posso apresentar minha documentação antes da primeira consulta.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-8" id="faq-btn-8">
-              Em quais bairros e cidades você atende?
+              Quando a fonoaudiologia faz sentido em cuidados paliativos?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-8" role="region" aria-labelledby="faq-btn-8" aria-hidden="true">
-              <p>Atendo em Belo Horizonte (todos os bairros) e na Região Metropolitana, em cidades num raio de aproximadamente 50km de BH. Para confirmar se atendo na sua região, é só me mandar uma mensagem no WhatsApp com o bairro ou cidade — geralmente respondo em poucas horas. Faço questão de verificar antes para não comprometer a regularidade do tratamento.</p>
+              <p>Quanto antes, melhor. Muitas famílias descobrem a fonoaudiologia paliativa tarde demais. O ideal é que eu faça parte da equipe de cuidado desde cedo, para prevenir complicações, adaptar a alimentação gradualmente e ajudar a família a manter a comunicação pelo maior tempo possível. Se você estiver nessa situação, me manda uma mensagem. Não há julgamento, só cuidado.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-9" id="faq-btn-9">
-              Posso acompanhar as sessões do meu familiar?
+              Quanto custa uma sessão domiciliar?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-9" role="region" aria-labelledby="faq-btn-9" aria-hidden="true">
-              <p>Sim — e eu incentivo! A presença da família é um dos maiores diferenciais do atendimento domiciliar. Você aprende as técnicas corretas, entende a evolução do tratamento e consegue dar continuidade às orientações nos dias em que não estou lá. Cuidadores também são muito bem-vindos. O tratamento é muito mais eficaz quando toda a rede de apoio está envolvida.</p>
+              <p>O valor varia conforme o tipo de atendimento (avaliação inicial, sessão de acompanhamento, distância) e a região. Me mande uma mensagem no WhatsApp informando o bairro/cidade e o tipo de atendimento que procura — respondo com os valores rapidinho, sem compromisso.</p>
             </div>
           </div>
 
           <div class="faq-item" role="listitem">
             <button class="faq-trigger" aria-expanded="false" aria-controls="faq-10" id="faq-btn-10">
-              O que acontece em casos de emergência durante o atendimento?
+              Como faço para agendar?
               <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq-content" id="faq-10" role="region" aria-labelledby="faq-btn-10" aria-hidden="true">
-              <p>Tenho treinamento para identificar e manejar situações de risco durante as sessões — incluindo engasgo, dificuldade respiratória e outras intercorrências. Minha formação no HC-UFMG e no Hospital Risoleta me preparou para ambientes de alta complexidade. Em caso de emergência, aciono imediatamente o SAMU (192) e fico com o paciente até a chegada do socorro. Antes de iniciar o atendimento, sempre converso com a família sobre os protocolos de segurança do domicílio.</p>
+              <p>Pelo WhatsApp! É o jeito mais rápido. Me manda uma mensagem em <a href="https://wa.me/5531992024967?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento%20domiciliar.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (31) 99202-4967 — abre em nova janela">(31) 99202-4967</a> dizendo o nome do paciente, a condição (se souber) e o bairro. Respondo em poucas horas para conversarmos, entender melhor a situação e agendar a avaliação inicial. Nada de formulário complicado — só uma conversa de WhatsApp.</p>
             </div>
           </div>
 
@@ -861,23 +763,23 @@
       </div>
     </section>
 
-    <!-- ========== 9. CTA FINAL – AGENDAR CONSULTA ========== -->
+    <!-- ========== 8. CTA FINAL – AGENDAR CONSULTA ========== -->
     <section class="section section-cta-final" aria-labelledby="cta-final-titulo">
       <div class="container">
         <div class="cta-final__inner fade-in">
           <div class="cta-final__content">
             <p class="overline">Agende sua consulta</p>
-            <h2 id="cta-final-titulo">Pronto para cuidar melhor do seu familiar?</h2>
-            <p>Entre em contato agora. Sem compromisso — vamos conversar sobre o caso do seu familiar e ver juntos o melhor caminho.</p>
+            <h2 id="cta-final-titulo">Dê o primeiro passo hoje.<br>Seu familiar merece esse cuidado.</h2>
+            <p>Uma conversa no WhatsApp é tudo que você precisa para começar. Sem burocracia, sem compromisso inicial.</p>
           </div>
           <div class="cta-final__actions">
             <a href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar."
                class="btn btn-cta"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="Falar com a Izabella no WhatsApp (31) 99202-4967 — abre em nova janela">
+               aria-label="Agendar consulta pelo WhatsApp (31) 99202-4967 — abre em nova janela">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-              Falar com a Izabella no WhatsApp
+              Agendar pelo WhatsApp
             </a>
             <p class="cta-final__contact">
               ou ligue: <a href="tel:+5531992024967" aria-label="Ligar para (31) 99202-4967">(31) 99202-4967</a>
@@ -934,7 +836,6 @@
           <a href="#sobre" class="footer__link">Sobre Izabella</a>
           <a href="#homecare" class="footer__link">Por que Home Care?</a>
           <a href="#area" class="footer__link">Área de Atendimento</a>
-          <a href="#depoimentos" class="footer__link">Depoimentos</a>
           <a href="#faq" class="footer__link">Perguntas Frequentes</a>
         </nav>
 
