@@ -3,38 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google Tag Manager — SUBSTITUIR PELO ID REAL: GTM-XXXXXXX -->
+  <!-- Google Tag Manager — SUBSTITUIR PELO ID REAL: GTM-KWHVG4RP -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  })(window,document,'script','dataLayer','GTM-KWHVG4RP');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Google tag (gtag.js) - GA4 — SUBSTITUIR PELO ID REAL: G-XXXXXXXXXX -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <!-- GA4 será carregado pelo Google Tag Manager para evitar tags duplicadas. -->
 
-  <!-- Google Ads Conversion Tracking — SUBSTITUIR PELO ID REAL: AW-XXXXXXXXX/XXXXXXXXXXXXXXX -->
-  <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') { window.location = url; }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXXXXX',
-        'value': 0,
-        'currency': 'BRL',
-        'event_callback': callback
-      });
-      return false;
-    }
-  </script>
+  <!-- Conversões do Google Ads serão configuradas no GTM após a criação da conta Ads. -->
 
   <title>Izabella Miranda | Fonoaudiologia domiciliar em Belo Horizonte</title>
   <meta name="description" content="Atendimento fonoaudiológico domiciliar especializado em adultos e idosos em Belo Horizonte e região metropolitana. Cuidado, técnica e escuta por Izabella Miranda Ferreira.">
@@ -468,8 +447,8 @@
   </script>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) — SUBSTITUIR PELO ID REAL: GTM-XXXXXXX -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  <!-- Google Tag Manager (noscript) — SUBSTITUIR PELO ID REAL: GTM-KWHVG4RP -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWHVG4RP"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
@@ -748,18 +727,18 @@
   <script>
     (function () {
       'use strict';
-      // WhatsApp click tracking — GA4 + Google Ads conversion.
-      document.addEventListener('DOMContentLoaded', function () {
-        var waLinks = document.querySelectorAll('a[href*="wa.me/5531992024967"]');
-        waLinks.forEach(function (link) {
-          link.addEventListener('click', function () {
-            gtag('event', 'whatsapp_click', {
-              'event_category': 'engagement',
-              'event_label': 'WhatsApp CTA',
-              'value': 1
-            });
-            gtag_report_conversion();
-          });
+      // Envia eventos para o dataLayer; as tags GA4/Ads serão configuradas no GTM.
+      window.dataLayer = window.dataLayer || [];
+      document.addEventListener('click', function (event) {
+        var link = event.target && event.target.closest
+          ? event.target.closest('a[href*="wa.me/"]')
+          : null;
+        if (!link) return;
+
+        window.dataLayer.push({
+          event: 'whatsapp_click',
+          link_url: link.href,
+          link_text: (link.innerText || link.getAttribute('aria-label') || 'WhatsApp').trim()
         });
       });
 
