@@ -768,6 +768,14 @@
         nav.querySelectorAll('a').forEach(function (link) {
           link.addEventListener('click', function () { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Abrir menu'); });
         });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && nav.classList.contains('open')) {
+            nav.classList.remove('open');
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Abrir menu');
+            menuButton.focus();
+          }
+        });
       }
 
       document.querySelectorAll('.faq-question').forEach(function (question) {
@@ -790,42 +798,6 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         revealElements.forEach(function (element) { observer.observe(element); });
       } else { revealElements.forEach(function (element) { element.classList.add('is-visible'); }); }
-    }());
-
-    (function () {
-      var menuButton = document.querySelector('.menu-toggle');
-      var nav = document.querySelector('#main-nav');
-      if (menuButton && nav) {
-        menuButton.addEventListener('click', function () {
-          var expanded = menuButton.getAttribute('aria-expanded') === 'true';
-          menuButton.setAttribute('aria-expanded', String(!expanded));
-          menuButton.setAttribute('aria-label', expanded ? 'Abrir menu' : 'Fechar menu');
-          nav.classList.toggle('is-open', !expanded);
-        });
-        nav.querySelectorAll('a').forEach(function (link) {
-          link.addEventListener('click', function () {
-            menuButton.setAttribute('aria-expanded', 'false');
-            menuButton.setAttribute('aria-label', 'Abrir menu');
-            nav.classList.remove('is-open');
-          });
-        });
-        document.addEventListener('keydown', function (event) {
-          if (event.key === 'Escape') {
-            menuButton.setAttribute('aria-expanded', 'false');
-            menuButton.setAttribute('aria-label', 'Abrir menu');
-            nav.classList.remove('is-open');
-            menuButton.focus();
-          }
-        });
-      }
-      document.querySelectorAll('.faq-question').forEach(function (button) {
-        button.addEventListener('click', function () {
-          var expanded = button.getAttribute('aria-expanded') === 'true';
-          button.setAttribute('aria-expanded', String(!expanded));
-          var answer = document.getElementById(button.getAttribute('aria-controls'));
-          if (answer) answer.style.maxHeight = expanded ? '0px' : answer.scrollHeight + 'px';
-        });
-      });
     }());
   </script>
 </body>
