@@ -426,6 +426,31 @@
       .whatsapp-float { bottom: 72px; }
       body { padding-bottom: 60px; }
     }
+  
+    /* UX: legibilidade, foco visível e contato contextual */
+    .specialty-contact { display:inline-flex; align-items:center; gap:8px; width:fit-content; margin:0 0 18px; color:var(--color-primary-dark); font-size:.88rem; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+    .specialty-contact:focus-visible, a:focus-visible, button:focus-visible { outline:3px solid var(--color-accent); outline-offset:4px; border-radius:5px; }
+    .coverage-summary { padding:34px; background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-card); }
+    .coverage-city { display:inline-block; margin-bottom:14px; padding:8px 13px; border-radius:999px; background:var(--color-primary-tint); color:var(--color-primary-dark); font-size:.85rem; font-weight:700; }
+    .coverage-summary h3 { color:var(--color-primary-dark); font-family:'Playfair Display',Georgia,serif; font-size:1.8rem; }
+    .coverage-summary p { color:var(--color-text-muted); line-height:1.7; }
+    .coverage-benefits { display:grid; gap:10px; padding-left:20px; color:var(--color-text); line-height:1.6; }
+    .faq-question { min-height:64px; font-size:1.05rem; }
+    .faq-answer { font-size:1rem; }
+    .faq-question[aria-expanded="true"] + .faq-answer { max-height:320px; }
+    .mobile-cta-bar { padding-bottom:calc(12px + env(safe-area-inset-bottom)); }
+    @media (max-width:700px) {
+      body { padding-bottom:calc(72px + env(safe-area-inset-bottom)); }
+      .mobile-cta-bar a { min-height:54px; font-size:1rem; }
+      .specialty-card { padding:24px; }
+      .coverage-summary { padding:25px; }
+      .hero .lead { font-size:1.08rem; line-height:1.65; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+    }
+
   </style>
   <!-- Schema.org: dados estruturados do atendimento profissional -->
   <script type="application/ld+json">
@@ -480,8 +505,8 @@
         <div class="hero-copy reveal">
           <p class="eyebrow">Fonoaudiologia domiciliar em BH</p>
           <h1 id="hero-title">Fonoaudióloga em Belo Horizonte: <em>atendimento domiciliar para adultos e idosos.</em></h1>
-          <p class="lead">Atendimento especializado para adultos e idosos, com a escuta humana de quem une formação pela UFMG e experiência hospitalar em reabilitação.</p>
-          <p class="hero-trust-line">Pós-graduação em fonoaudiologia adulto/idoso · Experiência hospitalar · Atendimento em Belo Horizonte</p>
+          <p class="lead">Cuidado fonoaudiológico domiciliar para adultos e idosos, com atuação em disfagia, reabilitação após AVC e condições neurológicas, voz e comunicação. Formação pela UFMG e experiência hospitalar.</p>
+          <p class="hero-trust-line">Atendimento domiciliar em Belo Horizonte · Adultos e idosos · Cuidado individualizado</p>
           <div class="hero-actions">
             <a class="btn btn-whatsapp" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Zm-8.49 18.45h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.21-3.67.96.98-3.57-.23-.37A9.96 9.96 0 1 1 12.01 21.95Zm5.47-7.47c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.69.15-.2.3-.79.97-.97 1.17-.18.2-.36.23-.66.08-1.78-.89-2.95-1.59-4.13-3.61-.31-.54.31-.5.89-1.66.1-.2.05-.36-.03-.51-.08-.15-.69-1.66-.94-2.28-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.51.08-.79.38-.28.3-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.06 3.15 5 4.42 1.86.8 2.59.87 3.52.73.57-.09 1.77-.72 2.02-1.42.25-.69.25-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"/></svg>
@@ -553,12 +578,12 @@
       <div class="container">
         <div class="section-heading center reveal"><p class="eyebrow">Onde posso ajudar</p><h2 id="especialidades-title">Cuidado especializado para cada necessidade.</h2><p class="lead">A avaliação fonoaudiológica considera a pessoa por inteiro, sua rotina e o que é importante para sua família.</p></div>
         <div class="specialties-grid">
-          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 5c4-2 10-2 14 0v6c0 5-3 8-7 10-4-2-7-5-7-10V5Z"/><path d="M8 10c1.5 1.8 2.8 2.7 4 2.7s2.5-.9 4-2.7"/><path d="M12 8v5"/></svg></div><h3>Disfagia</h3><p><strong>Dificuldade para Engolir.</strong> Seu familiar está engasgando com frequência, evitando comer, ou perdendo peso sem motivo aparente? A disfagia pode ser perigosa — o alimento pode ir para os pulmões sem que a pessoa perceba. Avalio e trato com segurança, no conforto da casa, para que comer volte a ser um prazer.</p><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 9v5m0 3h.01"/></svg> Segurança ao se alimentar</span></article>
-          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></div><h3>Neurologia</h3><p><strong>Reabilitação Pós-AVC e Doenças Neurodegenerativas.</strong> Após um AVC, Parkinson, Alzheimer ou outra condição neurológica, a comunicação e a alimentação mudam. Acompanho a reabilitação com paciência e técnica. O ambiente familiar favorece muito essa recuperação.</p><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4"/></svg> Reabilitação individualizada</span></article>
-          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12c0-5 3-8 8-8s8 3 8 8-3 8-8 8H8l-4 2v-4.5"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></div><h3>Voz</h3><p><strong>Rouquidão, Cansaço Vocal e Alterações.</strong> Rouquidão persistente, perda de voz, fadiga ao falar — esses sinais merecem atenção. Podem ter causas neurológicas, cirúrgicas ou funcionais.</p><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v11m4-7v7a4 4 0 0 1-8 0V6m-3 5a7 7 0 0 0 14 0M12 20v2m-4 0h8"/></svg> Voz com mais conforto</span></article>
-          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v12H7l-3 3V5Z"/><path d="M8 9h8M8 13h5"/></svg></div><h3>Linguagem</h3><p><strong>Dificuldade para Falar, Entender ou se Expressar.</strong> Dificuldade para falar, entender ou se expressar após lesão neurológica pode ser devastadora. Trabalho a reabilitação da comunicação para que seu familiar volte a interagir com quem ama.</p><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v13H8l-4 3V5Z"/><path d="M8 9h8m-8 4h5"/></svg> Comunicação que aproxima</span></article>
-          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 2v6m-3-3 3-3 3 3"/></svg></div><h3>Oncologia</h3><p><strong>Pacientes em Tratamento e Laringectomizados.</strong> Necessidades fonoaudiológicas específicas — na voz, na comunicação e na alimentação. O atendimento domiciliar poupa deslocamentos e reduz exposição a infecções.</p><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18"/></svg> Acompanhamento próximo</span></article>
-          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 6v8m-4-4h8"/></svg></div><h3>Cuidados Paliativos</h3><p><strong>Conforto e Dignidade em Momentos Delicados.</strong> Cuido da comunicação e da alimentação segura para garantir o máximo de conforto e dignidade ao paciente e à família.</p><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.8 8.7c0 5.5-8.8 11.1-8.8 11.1S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.7Z"/></svg> Conforto e dignidade</span></article>
+          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 5c4-2 10-2 14 0v6c0 5-3 8-7 10-4-2-7-5-7-10V5Z"/><path d="M8 10c1.5 1.8 2.8 2.7 4 2.7s2.5-.9 4-2.7"/><path d="M12 8v5"/></svg></div><h3>Disfagia</h3><p><strong>Dificuldade para engolir.</strong> Engasgos frequentes, tosse durante as refeições, sensação de alimento parado ou dificuldade para tomar líquidos podem indicar alterações na deglutição. A avaliação identifica as necessidades e orienta o cuidado com segurança, em conjunto com a equipe de saúde quando necessário.</p><a class="specialty-contact" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20conversar%20sobre%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer">Conversar sobre este cuidado <span aria-hidden="true">→</span></a><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 9v5m0 3h.01"/></svg> Segurança ao se alimentar</span></article>
+          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M3 12h4l2-5 3 10 2-5h7"/></svg></div><h3>Neurologia</h3><p><strong>Reabilitação após AVC e condições neurológicas.</strong> AVC, Parkinson e outras condições podem afetar a fala, a compreensão, a voz e a deglutição. O acompanhamento é individualizado, considerando as habilidades preservadas, as dificuldades e os objetivos do paciente e da família.</p><a class="specialty-contact" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20conversar%20sobre%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer">Conversar sobre este cuidado <span aria-hidden="true">→</span></a><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8m0-12.8L5.6 18.4"/></svg> Reabilitação individualizada</span></article>
+          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12c0-5 3-8 8-8s8 3 8 8-3 8-8 8H8l-4 2v-4.5"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></div><h3>Voz</h3><p><strong>Rouquidão, cansaço e alterações na voz.</strong> Mudanças persistentes na voz, esforço para falar, redução do volume ou fadiga vocal merecem avaliação para compreender as causas e definir a conduta adequada.</p><a class="specialty-contact" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20conversar%20sobre%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer">Conversar sobre este cuidado <span aria-hidden="true">→</span></a><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v11m4-7v7a4 4 0 0 1-8 0V6m-3 5a7 7 0 0 0 14 0M12 20v2m-4 0h8"/></svg> Voz com mais conforto</span></article>
+          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v12H7l-3 3V5Z"/><path d="M8 9h8M8 13h5"/></svg></div><h3>Linguagem</h3><p><strong>Dificuldade para falar, compreender ou se expressar.</strong> Após um AVC ou outra condição neurológica, a comunicação pode mudar. O trabalho busca ampliar as possibilidades de comunicação e participação nas atividades cotidianas, respeitando o ritmo de cada pessoa.</p><a class="specialty-contact" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20conversar%20sobre%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer">Conversar sobre este cuidado <span aria-hidden="true">→</span></a><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h16v13H8l-4 3V5Z"/><path d="M8 9h8m-8 4h5"/></svg> Comunicação que aproxima</span></article>
+          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 2v6m-3-3 3-3 3 3"/></svg></div><h3>Oncologia</h3><p><strong>Acompanhamento durante e após tratamentos oncológicos.</strong> Algumas condições e cirurgias podem trazer mudanças na voz, na comunicação e na deglutição. A avaliação fonoaudiológica considera cada caso e as orientações da equipe responsável.</p><a class="specialty-contact" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20conversar%20sobre%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer">Conversar sobre este cuidado <span aria-hidden="true">→</span></a><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M3 12h18"/></svg> Acompanhamento próximo</span></article>
+          <article class="specialty-card reveal"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 6v8m-4-4h8"/></svg></div><h3>Cuidados Paliativos</h3><p><strong>Comunicação, alimentação e conforto.</strong> Nos cuidados paliativos, o acompanhamento considera os desejos, o conforto e a qualidade de vida do paciente, com orientação e acolhimento à família e articulação com a equipe de saúde.</p><a class="specialty-contact" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20conversar%20sobre%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer">Conversar sobre este cuidado <span aria-hidden="true">→</span></a><span class="card-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.8 8.7c0 5.5-8.8 11.1-8.8 11.1S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.7Z"/></svg> Conforto e dignidade</span></article>
         </div>
       </div>
     </section>
@@ -642,17 +667,21 @@
     <!-- 7. FAQ -->
     <section class="section faq" id="duvidas" aria-labelledby="faq-title">
       <div class="container faq-layout">
-        <div class="faq-intro reveal"><p class="eyebrow">Dúvidas frequentes</p><h2 id="faq-title">Informação para você decidir com tranquilidade.</h2><p class="lead">Se a sua pergunta não estiver aqui, fale comigo. Será um prazer orientar.</p><a class="contact-mini" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M8 10.5h.01M12 10.5h.01M16 10.5h.01"/></svg> Falar com Izabella</a></div>
+        <div class="faq-intro reveal"><p class="eyebrow">Dúvidas frequentes</p><h2 id="faq-title">Informação para você decidir com tranquilidade.</h2><p class="lead">Reunimos algumas respostas para ajudar você e sua família a entender como funciona o atendimento.</p><a class="contact-mini" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20atendimento%20fonoaudiol%C3%B3gico." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M8 10.5h.01M12 10.5h.01M16 10.5h.01"/></svg> Falar com Izabella</a></div>
         <div class="accordion reveal">
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">Preciso de referencial médico?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1"><div class="faq-answer-inner">Não é obrigatório, mas recomendo diálogo com a equipe médica que acompanha o paciente para um cuidado integrado.</div></div></div>
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">Quanto tempo dura cada sessão?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2"><div class="faq-answer-inner">Em média, 45 a 60 minutos, variando conforme a necessidade e as condições do paciente no dia.</div></div></div>
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">Quantas sessões são necessárias?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3"><div class="faq-answer-inner">Depende do quadro. Apresento o plano de tratamento e as recomendações após a avaliação.</div></div></div>
-          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">Atende em quais regiões?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.2 7-12A7 7 0 0 0 5 9c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2"/></svg></button><div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4"><div class="faq-answer-inner">Atendo exclusivamente em Belo Horizonte, MG. Consulte a disponibilidade para o seu bairro.</div></div></div>
+          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">Atende em quais regiões?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.2 7-12A7 7 0 0 0 5 9c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2"/></svg></button><div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4"><div class="faq-answer-inner">Atendo exclusivamente em Belo Horizonte, MG. A disponibilidade é confirmada conforme o bairro, o endereço e a agenda.</div></div></div>
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">Tem convênio?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18v13H3zM7 7V5a5 5 0 0 1 10 0v2M7 13h10"/></svg></button><div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5"><div class="faq-answer-inner">O atendimento é particular. Emito recibo para reembolso, conforme as regras do seu convênio.</div></div></div>
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">Qual a diferença do domiciliar para o consultório?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11 12 4l8 7v8H4v-8Z"/><path d="M9 19v-5h6v5"/></svg></button><div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6"><div class="faq-answer-inner">No domiciliar, avalio o ambiente real, incluo a família nas orientações e evitamos o deslocamento do paciente.</div></div></div>
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a7" id="faq-q7">Atende pacientes acamados?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17h18M5 17v3m14-3v3M5 12h14a2 2 0 0 1 2 2v3H3v-3a2 2 0 0 1 2-2Zm2 0V8h5a3 3 0 0 1 3 3v1"/></svg></button><div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7"><div class="faq-answer-inner">Sim, inclusive em UTIs domiciliares, sempre respeitando as condições clínicas e o plano da equipe de saúde.</div></div></div>
           <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a8" id="faq-q8">Faz atendimento online?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3V9Z"/></svg></button><div class="faq-answer" id="faq-a8" role="region" aria-labelledby="faq-q8"><div class="faq-answer-inner">Para casos selecionados, sim. Conversamos sobre o objetivo do atendimento para avaliar se esse formato é adequado.</div></div></div>
-        </div>
+        
+          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a9" id="faq-q9">A família pode acompanhar a sessão?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-answer" id="faq-a9" role="region" aria-labelledby="faq-q9"><div class="faq-answer-inner">Sim. A participação de familiares ou cuidadores pode ser importante para receber orientações e apoiar o cuidado no dia a dia, conforme os objetivos definidos para cada paciente.</div></div></div>
+          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a10" id="faq-q10">O que devo informar no primeiro contato?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-answer" id="faq-a10" role="region" aria-labelledby="faq-q10"><div class="faq-answer-inner">Se possível, informe a idade do paciente, o bairro em Belo Horizonte, a principal dificuldade e se existe algum diagnóstico ou acompanhamento de saúde. Não é necessário enviar documentos ou informações sensíveis pelo primeiro contato.</div></div></div>
+          <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a11" id="faq-q11">Como funciona o pagamento?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18v13H3zM7 7V5a5 5 0 0 1 10 0v2M7 13h10"/></svg></button><div class="faq-answer" id="faq-a11" role="region" aria-labelledby="faq-q11"><div class="faq-answer-inner">O atendimento é particular. Entre em contato para consultar valores e formas de pagamento antes de agendar.</div></div></div>
+</div>
       </div>
     </section>
 
@@ -662,43 +691,23 @@
         <div class="area-copy reveal">
           <p class="eyebrow">Onde atendo</p>
           <h2 id="area-title">Cuidado que chega até você.</h2>
-          <p>O atendimento fonoaudiológico domiciliar é realizado em Belo Horizonte, MG, com cuidado próximo e pensado para a rotina de cada família.</p>
+          <p>Atendimento fonoaudiológico domiciliar para adultos e idosos em Belo Horizonte, MG. A disponibilidade é confirmada de acordo com o endereço e a agenda, antes de combinar a avaliação.</p>
           <span class="area-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="10" r="3"/><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/></svg> A cobertura é confirmada individualmente no primeiro contato.</span>
         </div>
-        <div class="area-coverage reveal" aria-label="Bairros e cidades atendidos">
-          <div class="coverage-grid">
-            <div class="coverage-column">
-              <h3>Belo Horizonte</h3>
-              <p class="coverage-subtitle">Bairros atendidos</p>
-                            <ul class="coverage-list" aria-label="Bairros — coluna 1">
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Santa Amélia</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Santa Mônica</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Céu Azul</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Santa Branca</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Itapoã</li>
-              </ul>
-            </div>
-
-            <div class="coverage-column">
-              <h3>&nbsp;</h3>
-              <p class="coverage-subtitle">&nbsp;</p>
-                            <ul class="coverage-list" aria-label="Bairros — coluna 2">
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Planalto</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Palmares</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>União</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Maria Goretti</li>
-                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>Ouro Minas</li>
-              </ul>
-            </div>
-
+        <div class="area-coverage reveal" aria-label="Área de atendimento">
+          <div class="coverage-summary">
+            <span class="coverage-city">Belo Horizonte, MG</span>
+            <h3>Atendimento domiciliar em BH</h3>
+            <p>A cobertura não se limita a uma lista fixa de bairros. Entre em contato informando o endereço para confirmar a disponibilidade.</p>
+            <ul class="coverage-benefits">
+              <li>Adultos e idosos</li>
+              <li>Atendimento em domicílio</li>
+              <li>Disponibilidade confirmada individualmente</li>
+            </ul>
           </div>
           <div class="coverage-note">
-            <p>A confirmação de atendimento na sua região é feita no primeiro contato pelo WhatsApp. Em caso de dúvida, envie sua cidade ou bairro.</p>
-            <div class="cred-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 7.9 7.5 9.5 4.4-1.6 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.5 12 2.3 2.3 4.7-5"/></svg>
-              Pós-graduação · Experiência hospitalar · CRFa/MG ativo
-            </div>
-            <a class="btn btn-primary" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20confirmar%20se%20voc%C3%AA%20atende%20na%20minha%20regi%C3%A3o." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Z"/></svg>Confirmar minha região</a>
+            <p>Para agilizar a consulta, envie o bairro e uma breve descrição da necessidade do paciente.</p>
+            <a class="btn btn-primary" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20confirmar%20a%20disponibilidade%20de%20atendimento%20no%20meu%20bairro%20em%20Belo%20Horizonte." target="_blank" rel="noopener noreferrer">Confirmar atendimento no meu bairro</a>
           </div>
         </div>
       </div>
@@ -706,7 +715,7 @@
 
     <section class="section contact" id="contato" aria-labelledby="contato-title">
       <div class="container contact-panel reveal">
-        <div><p class="eyebrow">Vamos conversar?</p><h2 id="contato-title">O próximo passo pode ser mais simples do que parece.</h2><p class="lead">Conte o que está acontecendo. Juntos, podemos entender o melhor caminho para o cuidado do seu familiar.</p><div class="response-time"><span class="pulse-dot"></span><span>Resposta em poucas horas pelo WhatsApp</span></div><div class="cred-badge">
+        <div><p class="eyebrow">Vamos conversar?</p><h2 id="contato-title">O próximo passo pode ser mais simples do que parece.</h2><p class="lead">Se você procura atendimento para si ou para alguém da família, conte brevemente o que está acontecendo, a idade do paciente e o bairro em Belo Horizonte. A Izabella orientará sobre os próximos passos.</p><div class="response-time"><span class="pulse-dot"></span><span>Resposta em poucas horas pelo WhatsApp</span></div><div class="cred-badge">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 7.9 7.5 9.5 4.4-1.6 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.5 12 2.3 2.3 4.7-5"/></svg>
               Pós-graduação · Experiência hospitalar · CRFa/MG ativo
             </div><div class="contact-actions"><a class="btn btn-whatsapp" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Z"/></svg> Agendar pelo WhatsApp</a></div></div>
@@ -781,6 +790,42 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         revealElements.forEach(function (element) { observer.observe(element); });
       } else { revealElements.forEach(function (element) { element.classList.add('is-visible'); }); }
+    }());
+
+    (function () {
+      var menuButton = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('#main-nav');
+      if (menuButton && nav) {
+        menuButton.addEventListener('click', function () {
+          var expanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', String(!expanded));
+          menuButton.setAttribute('aria-label', expanded ? 'Abrir menu' : 'Fechar menu');
+          nav.classList.toggle('is-open', !expanded);
+        });
+        nav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Abrir menu');
+            nav.classList.remove('is-open');
+          });
+        });
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.setAttribute('aria-label', 'Abrir menu');
+            nav.classList.remove('is-open');
+            menuButton.focus();
+          }
+        });
+      }
+      document.querySelectorAll('.faq-question').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var expanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!expanded));
+          var answer = document.getElementById(button.getAttribute('aria-controls'));
+          if (answer) answer.style.maxHeight = expanded ? '0px' : answer.scrollHeight + 'px';
+        });
+      });
     }());
   </script>
 </body>
