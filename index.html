@@ -132,7 +132,7 @@
     .menu-toggle svg { width: 24px; height: 24px; }
 
     /* Hero */
-    .hero { position: relative; overflow: hidden; padding: 164px 0 98px; background: var(--color-warm); }
+    .hero { position: relative; overflow: hidden; padding: 164px 0 56px; background: var(--color-warm); }
     .hero::after { position: absolute; right: -145px; bottom: -240px; width: 500px; height: 500px; border: 1px solid rgba(199,123,92,.2); border-radius: 50%; content: ''; }
     .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(380px, .95fr); align-items: center; gap: 66px; }
     .hero h1 { max-width: 700px; color: var(--color-primary-dark); }
@@ -176,7 +176,7 @@
     @media (max-width: 700px) { .experience-cards { grid-template-columns: 1fr; } .experience-card.highlight { grid-column: auto; } }
 
     /* Especialidades */
-    .specialties { background: var(--color-warm); }
+    .specialties { padding-top: 64px; background: var(--color-warm); }
     .specialties-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .specialty-card { display: flex; min-height: 100%; flex-direction: column; padding: 28px; background: white; border: 1px solid rgba(229,221,211,.9); border-radius: var(--radius-md); box-shadow: var(--shadow-card); transition: transform .25s ease, box-shadow .25s ease; }
     .specialty-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
@@ -339,7 +339,8 @@
       body { font-size: 17px; }
       .section { padding: 78px 0; }
       .section-heading { margin-bottom: 35px; }
-      .hero { padding: 112px 0 68px; }
+      .hero { padding: 112px 0 48px; }
+      .specialties { padding-top: 56px; }
       .hero h1 { font-size: clamp(2.35rem, 12vw, 3.4rem); }
       .hero-actions, .contact-actions { flex-direction: column; align-items: stretch; }
       .hero-actions .btn, .contact-actions .btn { width: 100%; }
