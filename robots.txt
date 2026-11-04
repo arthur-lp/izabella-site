@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fonoaudiologabh.com.br/sitemap.xml
