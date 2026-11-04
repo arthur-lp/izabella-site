@@ -309,7 +309,7 @@
     @media (max-width: 1050px) {
       .nav-links { gap: 14px; }
       .hero-grid { gap: 35px; }
-      .home-care-grid, .faq-layout { gap: 45px; }
+      .faq-layout { gap: 45px; }
       .contact-panel { padding: 50px; }
     }
     @media (max-width: 860px) {
@@ -322,13 +322,13 @@
       .nav-links a:hover { background: var(--color-primary-tint); }
       .header-cta { display: none; }
       .hero { padding-top: 125px; }
-      .hero-grid, .about-grid, .home-care-grid, .faq-layout, .area-grid, .contact-panel { grid-template-columns: 1fr; }
+      .hero-grid, .about-grid, .faq-layout, .area-grid, .contact-panel { grid-template-columns: 1fr; }
       .hero-copy { order: 0; }
       .hero-visual { min-height: 540px; order: 1; }
       .hero-photo { left: 50%; right: auto; transform: translateX(-50%); }
       .hero-stamp { left: calc(50% - 265px); }
       
-      .home-care-photo { height: 390px; }
+      
       .steps { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
       .steps::before { display: none; }
       .faq-intro { position: static; }
@@ -352,9 +352,9 @@
       
       
       .quote { padding: 20px; font-size: 1.2rem; }
-      .specialties-grid, .benefits-grid { grid-template-columns: 1fr; }
-      .specialty-card { padding: 24px; }
-      .home-care-photo { height: 300px; }
+      .specialties-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .specialty-card { padding: 20px; }
+      
       .steps { grid-template-columns: 1fr; gap: 26px; }
       .step { display: grid; grid-template-columns: 62px 1fr; column-gap: 17px; text-align: left; align-items: start; }
       .step-number { grid-row: span 2; margin: 0; }
@@ -418,8 +418,7 @@
     }
   
     /* UX: legibilidade, foco visível e contato contextual */
-    .specialty-contact { display:inline-flex; align-items:center; gap:8px; width:fit-content; margin:0 0 18px; color:var(--color-primary-dark); font-size:.88rem; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
-    .specialty-contact:focus-visible, a:focus-visible, button:focus-visible { outline:3px solid var(--color-accent); outline-offset:4px; border-radius:5px; }
+    a:focus-visible, button:focus-visible { outline:3px solid var(--color-accent); outline-offset:4px; border-radius:5px; }
     .coverage-summary { padding:34px; background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-card); }
     .coverage-city { display:inline-block; margin-bottom:14px; padding:8px 13px; border-radius:999px; background:var(--color-primary-tint); color:var(--color-primary-dark); font-size:.85rem; font-weight:700; }
     .coverage-summary h3 { color:var(--color-primary-dark); font-family:'Playfair Display',Georgia,serif; font-size:1.8rem; }
@@ -482,7 +481,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
       <nav class="nav-links" id="main-nav" aria-label="Navegação principal">
-        <a href="#especialidades">Especialidades</a><a href="#home-care">Home Care</a><a href="#como-funciona">Como funciona</a><!-- <a href="#depoimentos">Depoimentos</a> --><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
+        <a href="#especialidades">Especialidades</a><a href="#como-funciona">Como funciona</a><!-- <a href="#depoimentos">Depoimentos</a> --><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
       </nav>
       <a class="btn btn-primary header-cta" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">Agendar consulta</a>
     </div>
