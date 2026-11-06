@@ -123,7 +123,8 @@
     }
     .nav-wrap { display: flex; min-height: 78px; align-items: center; justify-content: space-between; gap: 28px; }
     .brand { display: inline-flex; align-items: center; gap: 12px; color: var(--color-primary-dark); text-decoration: none; white-space: nowrap; }
-    .brand-mark { display: grid; width: 42px; height: 42px; place-items: center; color: white; background: var(--color-primary); border-radius: 13px; font-family: Georgia, serif; font-size: 1rem; font-weight: 700; }
+    .brand-mark { display: grid; width: 48px; height: 48px; place-items: center; overflow: hidden; background: #F6F5F1; border-radius: 13px; flex: 0 0 48px; }
+    .brand-mark img { width: 100%; height: 100%; object-fit: contain; }
     .brand-name { font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; font-weight: 600; }
     .nav-links { display: flex; align-items: center; gap: 25px; margin-left: auto; }
     .nav-links a { color: var(--color-text-muted); font-size: .82rem; font-weight: 600; text-decoration: none; }
@@ -279,7 +280,7 @@
     footer { padding: 37px 0 30px; color: rgba(255,255,255,.74); background: var(--color-primary-dark); font-size: .78rem; }
     .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .footer-brand { color: white; }
-    .footer-brand .brand-mark { background: rgba(255,255,255,.14); }
+    .footer-brand .brand-mark { background: #F6F5F1; }
     .footer-brand .brand-name { font-size: 1.1rem; }
     .footer-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 20px; text-align: center; }
     .footer-info a { color: rgba(255,255,255,.84); text-decoration: none; }
@@ -478,7 +479,7 @@
   <header class="site-header" aria-label="Cabeçalho principal">
     <div class="container nav-wrap">
       <a class="brand" href="#inicio" aria-label="Izabella Miranda - início">
-        <span class="brand-mark" aria-hidden="true">IM</span><span class="brand-name">Izabella Miranda</span>
+        <span class="brand-mark" aria-hidden="true"><img src="/favicon.svg" alt="" width="48" height="48"></span><span class="brand-name">Izabella Miranda</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
