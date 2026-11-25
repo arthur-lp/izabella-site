@@ -11,6 +11,15 @@
   })(window,document,'script','dataLayer','GTM-KWHVG4RP');</script>
   <!-- End Google Tag Manager -->
 
+  <!-- Google Ads: Google tag (compartilha o dataLayer existente com o GTM). -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18504402392"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18504402392');
+  </script>
+
   <!-- GA4 será carregado pelo Google Tag Manager para evitar tags duplicadas. -->
 
   <!-- Conversões do Google Ads serão configuradas no GTM após a criação da conta Ads. -->
@@ -679,6 +688,11 @@
           event: 'whatsapp_click',
           link_url: link.href,
           link_text: (link.innerText || link.getAttribute('aria-label') || 'WhatsApp').trim()
+        });
+
+        // Conversão Google Ads: clique de saída para o WhatsApp.
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18504402392/IDMjCISN974dENiLy_dE'
         });
       });
 
