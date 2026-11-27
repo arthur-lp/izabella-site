@@ -592,6 +592,106 @@
     @media (prefers-reduced-motion: reduce) {
       .hero-carousel-image, .hero-carousel-dot { transition: none; }
     }
+    /* Carrossel independente da foto profissional da Izabella */
+    .hero-intro-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 176px;
+      align-items: start;
+      gap: 18px;
+      margin-bottom: 20px;
+    }
+    .hero-intro-row h1 { margin: 0; min-width: 0; }
+    .hero-intro-row .hero-carousel-card {
+      position: relative;
+      width: 100%;
+      max-width: none;
+      aspect-ratio: 2 / 3;
+      margin: 4px 0 0;
+      overflow: hidden;
+      border-radius: 76px 76px 16px 16px;
+      background: #e8e4da;
+      box-shadow: 0 14px 34px rgba(42,62,50,.13);
+    }
+    .hero-carousel-image {
+      position: absolute;
+      inset: 0;
+      background-repeat: no-repeat;
+      background-size: 100% 300%;
+      background-position: center 0%;
+      transition: background-position .9s cubic-bezier(.2,.7,.2,1);
+    }
+    .hero-carousel-overlay {
+      position: absolute;
+      inset: auto 0 0;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 46px 12px 13px;
+      color: #fff;
+      background: linear-gradient(transparent, rgba(24,42,33,.68));
+    }
+    .hero-carousel-caption { max-width: 150px; font-size: .72rem; line-height: 1.35; font-weight: 600; }
+    .hero-carousel-dots { display: flex; gap: 6px; flex-shrink: 0; }
+    .hero-carousel-dot {
+      width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%;
+      background: rgba(255,255,255,.58); cursor: pointer;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .hero-carousel-dot.is-active { background: #fff; transform: scale(1.3); }
+    .hero-carousel-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+    .hero-visual { position: relative; min-height: 500px; }
+    .hero-visual .hero-photo { display: block; position: relative; inset: auto; width: min(100%,404px); height: 500px; margin-left: auto; object-fit: cover; object-position: center 18%; border-radius: 180px 180px 18px 18px; filter: drop-shadow(0 12px 18px rgba(0,0,0,.10)); }
+    .hero-visual .hero-stamp { bottom: 22px; left: -28px; }
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: minmax(0,1fr); }
+      .hero-copy { max-width: none; }
+      .hero-visual { min-height: 480px; }
+      .hero-visual .hero-photo { width: min(78%,404px); height: 460px; margin-inline: auto; }
+      .hero-visual .hero-stamp { left: calc(50% - 265px); }
+    }
+    @media (max-width: 620px) {
+      .hero { padding: 104px 0 34px; }
+      .hero-intro-row {
+        grid-template-columns: minmax(0,1fr) minmax(112px,36%);
+        gap: 11px;
+        align-items: start;
+        margin-bottom: 18px;
+      }
+      .hero-intro-row h1 {
+        max-width: none;
+        font-size: clamp(1.55rem,6.15vw,2.15rem);
+        line-height: 1.12;
+        letter-spacing: -.045em;
+        text-wrap: pretty;
+      }
+      .hero-intro-row .hero-carousel-card {
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        margin-top: 2px;
+        border-radius: 58px 58px 12px 12px;
+      }
+      .hero-carousel-overlay { padding: 35px 8px 10px; gap: 5px; }
+      .hero-carousel-caption { display: none; }
+      .hero-carousel-dots { gap: 6px; }
+      .hero-carousel-dot { width: 7px; height: 7px; }
+      .hero-copy .lead { max-width: none; margin-bottom: 16px; font-size: .96rem; line-height: 1.58; }
+      .hero-trust-line { margin: 10px 0 18px; font-size: .76rem; }
+      .hero-actions { gap: 10px; margin-bottom: 18px; }
+      .hero-actions .btn { min-height: 48px; }
+      .trust-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .trust-badge { min-height: 34px; font-size: .66rem; }
+      .hero-visual { min-height: 390px; }
+      .hero-visual .hero-photo { width: 78%; height: 380px; border-radius: 130px 130px 16px 16px; }
+      .hero-visual .hero-stamp { left: 3%; bottom: -5px; width: 108px; height: 108px; padding: 12px; font-size: .64rem; }
+      .whatsapp-float { display: none; }
+      .mobile-cta-bar { padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); }
+      .mobile-cta-bar a { min-height: 52px; font-size: .96rem; }
+      body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-carousel-image, .hero-carousel-dot { transition: none; }
+    }
 </style>
   <!-- Schema.org: dados estruturados do atendimento profissional -->
   <script type="application/ld+json">
@@ -644,13 +744,25 @@
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          
-          <h1 id="hero-title">Fonoaudióloga em Belo Horizonte <em>com atendimento domiciliar para adultos e idosos.</em></h1>
+          <div class="hero-intro-row">
+            <h1 id="hero-title">Fonoaudióloga em Belo Horizonte <em>com atendimento domiciliar para adultos e idosos.</em></h1>
+            <div class="hero-carousel-card" aria-label="Registros de atendimentos fonoaudiológicos">
+              <div class="hero-carousel-image" id="hero-carousel-image" role="img" aria-label="Carrossel de atendimentos fonoaudiológicos domiciliares"></div>
+              <div class="hero-carousel-overlay">
+                <span class="hero-carousel-caption">Cuidado individualizado no conforto de casa</span>
+                <div class="hero-carousel-dots" role="group" aria-label="Selecionar foto do atendimento">
+                  <button type="button" class="hero-carousel-dot is-active" aria-label="Ver foto 1" aria-pressed="true" data-slide="0"></button>
+                  <button type="button" class="hero-carousel-dot" aria-label="Ver foto 2" aria-pressed="false" data-slide="1"></button>
+                  <button type="button" class="hero-carousel-dot" aria-label="Ver foto 3" aria-pressed="false" data-slide="2"></button>
+                </div>
+              </div>
+            </div>
+          </div>
           <p class="lead">Atendimento domiciliar para adultos e idosos, com atuação em disfagia, reabilitação após AVC e condições neurológicas, voz e comunicação. Graduação pela UFMG e Residência Hospitalar em Saúde do Adulto e Idoso pelo Hospital Risoleta Tolentino Neves.</p>
           <p class="hero-trust-line">Atendimento domiciliar em Belo Horizonte · Adultos e idosos · Cuidado individualizado</p>
           <div class="hero-actions">
             <a class="btn btn-whatsapp" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Zm-8.49 18.45h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.21-3.67.96.98-3.57-.23-.37A9.96 9.96 0 1 1 12.01 21.95Zm5.47-7.47c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.69.15-.2.3-.79.97-.97 1.17-.18.2-.36.23-.66.08-1.78-.89-2.95-1.59-4.13-3.61-.31-.54.31-.5.89-1.66.1-.2.05-.36-.03-.51-.08-.15-.69-1.66-.94-2.28-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.51.08-.79.38-.28.3-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.06 3.15 5 4.42 1.86.8 2.59.87 3.52.73.57-.09 1.77-.72 2.02-1.42.25-.69.25-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Zm-8.49 18.45h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.21-3.67.96.98-3.57-.23-.37A9.96 9.96 0 1 1 12.01 21.95Zm5.47-7.47c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.69.15-.2.3-.79.97-.97 1.17-.18.2-.36.23-.66.08-1.78-.89-2.95-1.59-4.13-3.61-.31-.54.31-.5.89-1.66.1-.2.05-.36-.03-.51-.08-.15-.69-1.66-.94-2.28-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.51.08-.79.38-.28.3-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.06 3.15 5 4.42 1.86.8 2.59.87 3.52.73.57-.09 1.77-.72 2.02-1.42.25-.69.18-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"/></svg>
               Falar pelo WhatsApp
             </a>
             <a class="btn btn-light" href="#especialidades">Conhecer especialidades</a>
@@ -658,22 +770,12 @@
           <div class="trust-row" aria-label="Credenciais">
             <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 8 3v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg> CRFa/MG ativo</span>
             <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M2 21h20M8 9h1m6 0h1m-8 4h1m6 0h1m-8 4h1m6 0h1"/></svg> Pós Graduada em Saude do Adulto e Idoso</span>
-            <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7h14v14M8 7V4h8v3M9 11h1m4 0h1m-6 4h1m4 0h1"/></svg> Experiência Clínica e Hospitalar </span>
+            <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7h14v14M8 7V4h8v3M9 11h1m4 0h1m-6 4h1m4 0h1"/></svg> Experiência Clínica e Hospitalar</span>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <div class="hero-carousel-card" aria-label="Registros de atendimentos fonoaudiológicos">
-            <div class="hero-carousel-image" id="hero-carousel-image" role="img" aria-label="Atendimento fonoaudiológico domiciliar com pessoa idosa"></div>
-            <div class="hero-carousel-overlay">
-              <span class="hero-carousel-caption">Cuidado individualizado, no conforto de casa</span>
-              <div class="hero-carousel-dots" role="group" aria-label="Selecionar foto do atendimento">
-                <button type="button" class="hero-carousel-dot is-active" aria-label="Ver foto 1" aria-pressed="true" data-slide="0"></button>
-                <button type="button" class="hero-carousel-dot" aria-label="Ver foto 2" aria-pressed="false" data-slide="1"></button>
-                <button type="button" class="hero-carousel-dot" aria-label="Ver foto 3" aria-pressed="false" data-slide="2"></button>
-              </div>
-            </div>
-            <div class="hero-stamp"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 5V2m-2 2 2-2 2 2"/></svg><span>Cuidado com<br>técnica e afeto</span></div></div>
-          </div>
+        <div class="hero-visual reveal" aria-label="Foto de Izabella Miranda Ferreira, fonoaudióloga">
+          <img class="hero-photo" src="/izabella-profissional.webp" alt="Izabella Miranda Ferreira, Fonoaudióloga formada pela UFMG com atendimento domiciliar em Belo Horizonte" width="864" height="1435" fetchpriority="high" decoding="async">
+          <div class="hero-stamp"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 5V2m-2 2 2-2 2 2"/></svg><span>Cuidado com<br>técnica e afeto</span></div></div>
         </div>
       </div>
     </section>
