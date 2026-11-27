@@ -527,12 +527,16 @@
     @media (max-width: 620px) {
       .story-hero { min-height: 100svh; padding: 96px 0 calc(86px + env(safe-area-inset-bottom)); }
       .story-layout {
-        width: min(var(--container),calc(100% - 36px)); min-height: 0;
+        width: min(var(--container),calc(100% - 36px));
+        min-height: calc(100svh - 206px);
         grid-template-columns: minmax(0,1fr) minmax(142px,43%);
         grid-template-rows: 1fr auto; align-items: center; gap: 12px;
       }
-      .story-heading { max-width: none; }
-      .story-eyebrow { margin-bottom: 10px; font-size: .59rem; letter-spacing: .1em; }
+      .story-heading { max-width: none; padding-top: 42px; }
+      .story-heading .story-eyebrow {
+        position: absolute; top: 0; left: 0; width: 100%;
+        margin: 0; font-size: .66rem; letter-spacing: .11em;
+      }
       .story-heading h1 { font-size: clamp(1.85rem,7.6vw,2.65rem); line-height: 1.08; letter-spacing: -.045em; text-wrap: pretty; }
       .story-audience { margin-top: 14px; font-size: .76rem; line-height: 1.45; }
       .story-card { width: 100%; max-height: none; aspect-ratio: 2 / 3; border-radius: 78px 78px 14px 14px; }
@@ -540,7 +544,14 @@
       .story-card-footer > span { max-width: 100px; font-size: .64rem; }
       .story-dots { gap: 6px; }
       .story-dot { width: 7px; height: 7px; }
-      .story-scroll { padding: 4px 8px; font-size: .72rem; }
+      .story-scroll {
+        gap: 12px; padding: 13px 22px; margin-top: 8px;
+        color: var(--color-primary-dark); background: #fff;
+        border: 1px solid rgba(45,95,79,.16); border-radius: 999px;
+        box-shadow: 0 8px 22px rgba(45,95,79,.10);
+        font-size: .96rem; font-weight: 700; opacity: 1;
+      }
+      .story-scroll span { font-size: 1.2rem; }
       .profile-section { padding: 70px 0 84px; }
       .profile-layout { grid-template-columns: minmax(0,1fr); gap: 30px; }
       .profile-image-frame { width: min(100%,330px); max-width: 330px; border-radius: 145px 145px 16px 16px; }
