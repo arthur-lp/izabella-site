@@ -454,7 +454,103 @@
       *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
     }
 
-  </style>
+  
+    /* Hero editorial em formato de stories */
+    .story-hero {
+      position: relative; min-height: 100svh; display: flex; align-items: center;
+      padding: 112px 0 94px; overflow: hidden;
+      background: linear-gradient(145deg, #F8F7F3 0%, #F1EFE9 100%);
+    }
+    .story-hero::after {
+      content: ""; position: absolute; width: min(58vw,720px); aspect-ratio: 1;
+      right: -18vw; bottom: -45%; border: 1px solid rgba(189,128,100,.18);
+      border-radius: 50%; pointer-events: none;
+    }
+    .story-layout {
+      position: relative; z-index: 1; display: grid;
+      grid-template-columns: minmax(0,1fr) minmax(340px,.82fr);
+      grid-template-rows: 1fr auto; align-items: center;
+      gap: 18px clamp(36px,7vw,100px);
+      width: min(var(--container),calc(100% - 48px));
+      min-height: calc(100svh - 206px);
+    }
+    .story-heading { max-width: 590px; }
+    .story-eyebrow { margin: 0 0 18px; color: var(--color-accent); font-size: .76rem; font-weight: 700; letter-spacing: .13em; line-height: 1.5; text-transform: uppercase; }
+    .story-heading h1 {
+      margin: 0; color: var(--color-primary-dark); font-family: 'Playfair Display',Georgia,serif;
+      font-size: clamp(3rem,5.6vw,5.6rem); font-weight: 600; line-height: 1.06;
+      letter-spacing: -.045em; text-wrap: balance;
+    }
+    .story-heading h1 em { color: var(--color-accent); font-style: normal; }
+    .story-audience { margin: 24px 0 0; color: var(--color-primary); font-size: .94rem; font-weight: 600; }
+    .story-card {
+      position: relative; justify-self: center; width: min(100%,440px,44svh); aspect-ratio: 2 / 3;
+      overflow: hidden; isolation: isolate;
+      border-radius: 190px 190px 22px 22px; background: #e9e5dd;
+      box-shadow: 0 24px 64px rgba(42,62,50,.15);
+    }
+    .story-photo {
+      position: absolute; inset: 0; background-color: #e9e5dd; background-repeat: no-repeat;
+      background-size: 100% 300%; background-position: center 0%;
+      transition: background-position .85s cubic-bezier(.2,.7,.2,1);
+    }
+    .story-shade { position: absolute; inset: 48% 0 0; background: linear-gradient(transparent,rgba(20,38,30,.62)); pointer-events: none; }
+    .story-card-footer {
+      position: absolute; right: 0; bottom: 0; left: 0; display: flex; align-items: end;
+      justify-content: space-between; gap: 12px; padding: 50px 22px 22px;
+      color: #fff; font-size: .84rem; font-weight: 600; line-height: 1.4;
+    }
+    .story-card-footer > span { max-width: 230px; }
+    .story-dots { display: flex; flex-shrink: 0; gap: 8px; }
+    .story-dot { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.58); cursor: pointer; transition: transform .2s ease,background .2s ease; }
+    .story-dot.is-active { background: #fff; transform: scale(1.3); }
+    .story-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+    .story-scroll { grid-column: 1 / -1; justify-self: center; display: inline-flex; align-items: center; gap: 9px; padding: 5px 12px; color: var(--color-primary); font-size: .8rem; font-weight: 600; text-decoration: none; opacity: .82; }
+    /* Apresentação da profissional */
+    .profile-section { padding: 104px 0; background: #fff; }
+    .profile-layout { display: grid; grid-template-columns: minmax(260px,.78fr) minmax(0,1.22fr); align-items: center; gap: clamp(42px,7vw,92px); }
+    .profile-image-frame { width: 100%; max-width: 420px; justify-self: center; overflow: hidden; border-radius: 190px 190px 20px 20px; background: var(--color-warm); box-shadow: var(--shadow-soft); }
+    .profile-image-frame img { display: block; width: 100%; max-width: 100%; height: auto; object-fit: contain; }
+    .profile-copy { min-width: 0; }
+    .profile-copy h2 { margin: 0 0 22px; color: var(--color-primary-dark); font-family: 'Playfair Display',Georgia,serif; font-size: clamp(2.4rem,4.2vw,4rem); line-height: 1.12; letter-spacing: -.035em; text-wrap: balance; }
+    .profile-copy h2 span { color: var(--color-accent); }
+    .profile-copy p { color: var(--color-text-muted); }
+    .profile-copy .profile-lead { color: var(--color-primary-dark); font-size: 1.12rem; font-weight: 500; }
+    .profile-credentials { display: flex; flex-wrap: wrap; gap: 9px; margin: 24px 0 28px; }
+    .profile-credentials span { padding: 8px 13px; color: var(--color-primary); background: var(--color-primary-tint); border: 1px solid rgba(91,138,122,.18); border-radius: 999px; font-size: .76rem; font-weight: 700; }
+    .profile-cta { display: inline-flex; }
+    @media (max-width: 860px) {
+      .story-layout { grid-template-columns: minmax(0,1fr) minmax(270px,.82fr); gap: 22px; }
+      .story-heading h1 { font-size: clamp(2.7rem,6vw,4.1rem); }
+      .profile-layout { grid-template-columns: minmax(230px,.8fr) minmax(0,1.2fr); gap: 32px; }
+    }
+    @media (max-width: 620px) {
+      .story-hero { min-height: 100svh; padding: 96px 0 calc(86px + env(safe-area-inset-bottom)); }
+      .story-layout {
+        width: min(var(--container),calc(100% - 36px)); min-height: 0;
+        grid-template-columns: minmax(0,1fr) minmax(142px,43%);
+        grid-template-rows: 1fr auto; align-items: center; gap: 12px;
+      }
+      .story-heading { max-width: none; }
+      .story-eyebrow { margin-bottom: 10px; font-size: .59rem; letter-spacing: .1em; }
+      .story-heading h1 { font-size: clamp(1.85rem,7.6vw,2.65rem); line-height: 1.08; letter-spacing: -.045em; text-wrap: pretty; }
+      .story-audience { margin-top: 14px; font-size: .76rem; line-height: 1.45; }
+      .story-card { width: 100%; max-height: none; aspect-ratio: 2 / 3; border-radius: 78px 78px 14px 14px; }
+      .story-card-footer { padding: 36px 10px 12px; gap: 5px; }
+      .story-card-footer > span { max-width: 100px; font-size: .64rem; }
+      .story-dots { gap: 6px; }
+      .story-dot { width: 7px; height: 7px; }
+      .story-scroll { padding: 4px 8px; font-size: .72rem; }
+      .profile-section { padding: 70px 0 84px; }
+      .profile-layout { grid-template-columns: minmax(0,1fr); gap: 30px; }
+      .profile-image-frame { width: min(100%,330px); max-width: 330px; border-radius: 145px 145px 16px 16px; }
+      .profile-image-frame img { width: 100%; height: auto; }
+      .profile-copy h2 { font-size: clamp(2.25rem,9vw,3rem); }
+      .profile-credentials { align-items: flex-start; flex-direction: column; }
+      .profile-cta { display: flex; width: 100%; justify-content: center; text-align: center; }
+    }
+    @media (prefers-reduced-motion: reduce) { .story-photo,.story-dot { transition: none; } }
+</style>
   <!-- Schema.org: dados estruturados do atendimento profissional -->
   <script type="application/ld+json">
   {
@@ -503,34 +599,49 @@
 
   <main id="conteudo">
     <!-- 1. Hero -->
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          
-          <h1 id="hero-title">Fonoaudióloga em Belo Horizonte: <em>atendimento domiciliar para adultos e idosos.</em></h1>
-          <p class="lead">Atendimento domiciliar para adultos e idosos, com atuação em disfagia, reabilitação após AVC e condições neurológicas, voz e comunicação. Graduação pela UFMG e Residência Hospitalar em Saúde do Adulto e Idoso pelo Hospital Risoleta Tolentino Neves.</p>
-          <p class="hero-trust-line">Atendimento domiciliar em Belo Horizonte · Adultos e idosos · Cuidado individualizado</p>
-          <div class="hero-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Zm-8.49 18.45h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.21-3.67.96.98-3.57-.23-.37A9.96 9.96 0 1 1 12.01 21.95Zm5.47-7.47c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.69.15-.2.3-.79.97-.97 1.17-.18.2-.36.23-.66.08-1.78-.89-2.95-1.59-4.13-3.61-.31-.54.31-.5.89-1.66.1-.2.05-.36-.03-.51-.08-.15-.69-1.66-.94-2.28-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.51.08-.79.38-.28.3-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.06 3.15 5 4.42 1.86.8 2.59.87 3.52.73.57-.09 1.77-.72 2.02-1.42.25-.69.25-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"/></svg>
-              Falar pelo WhatsApp
-            </a>
-            <a class="btn btn-light" href="#especialidades">Conhecer especialidades</a>
-          </div>
-          <div class="trust-row" aria-label="Credenciais">
-            <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 8 3v5c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg> CRFa/MG ativo</span>
-            <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M2 21h20M8 9h1m6 0h1m-8 4h1m6 0h1m-8 4h1m6 0h1"/></svg> Pós Graduada em Saude do Adulto e Idoso</span>
-            <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7h14v14M8 7V4h8v3M9 11h1m4 0h1m-6 4h1m4 0h1"/></svg> Experiência Clínica e Hospitalar </span>
+    <section class="hero story-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container story-layout">
+        <div class="story-heading">
+          <p class="story-eyebrow">Fonoaudiologia domiciliar · Belo Horizonte</p>
+          <h1 id="hero-title">Cuidado que acolhe. <em>Comunicação que transforma.</em></h1>
+          <p class="story-audience">Atendimento para adultos e idosos</p>
+        </div>
+        <div class="story-card" aria-label="Fotos de atendimentos fonoaudiológicos">
+          <div class="story-photo" id="hero-carousel-image" role="img" aria-label="Atendimento fonoaudiológico domiciliar"></div>
+          <div class="story-shade"></div>
+          <div class="story-card-footer">
+            <span>Um cuidado próximo, no conforto de casa.</span>
+            <div class="story-dots" role="group" aria-label="Escolher foto">
+              <button type="button" class="story-dot is-active" data-slide="0" aria-label="Foto 1" aria-pressed="true"></button>
+              <button type="button" class="story-dot" data-slide="1" aria-label="Foto 2" aria-pressed="false"></button>
+              <button type="button" class="story-dot" data-slide="2" aria-label="Foto 3" aria-pressed="false"></button>
+            </div>
           </div>
         </div>
-        <div class="hero-visual reveal" aria-label="Foto de Izabella Miranda Ferreira, fonoaudióloga">
-          <img class="hero-photo" src="/izabella-profissional.webp" alt="Izabella Miranda Ferreira, Fonoaudióloga formada pela UFMG com atendimento domiciliar em Belo Horizonte" width="864" height="1435" fetchpriority="high" decoding="async">
-          <div class="hero-stamp"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 5V2m-2 2 2-2 2 2"/></svg><span>Cuidado com<br>técnica e afeto</span></div></div>
+        <a class="story-scroll" href="#izabella">Conheça a Izabella <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="section profile-section" id="izabella" aria-labelledby="izabella-title">
+      <div class="container profile-layout">
+        <div class="profile-image-frame">
+          <img src="/izabella-profissional.webp" alt="Izabella Miranda Ferreira, fonoaudióloga" width="864" height="1435" loading="lazy" decoding="async">
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">Prazer, sou a Izabella</p>
+          <h2 id="izabella-title">Cuidado individualizado, com <span>técnica e afeto.</span></h2>
+          <p class="profile-lead">Sou fonoaudióloga e levo atendimento especializado até a casa de adultos e idosos em Belo Horizonte.</p>
+          <p>Atuo em disfagia, reabilitação após AVC e condições neurológicas, voz e comunicação. Sou graduada pela UFMG e tenho Residência Hospitalar em Saúde do Adulto e Idoso pelo Hospital Risoleta Tolentino Neves.</p>
+          <div class="profile-credentials">
+            <span>CRFa/MG ativo</span>
+            <span>Graduação pela UFMG</span>
+            <span>Residência Hospitalar</span>
+          </div>
+          <a class="btn btn-whatsapp profile-cta" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">Conversar com a Izabella pelo WhatsApp</a>
         </div>
       </div>
     </section>
 
-    <!-- 3. Especialidades -->
     <section class="section specialties" id="especialidades" aria-labelledby="especialidades-title">
       <div class="container">
         <div class="section-heading center reveal"><h2 id="especialidades-title">Cuidado especializado para cada necessidade.</h2><p class="lead">A avaliação fonoaudiológica considera a pessoa por inteiro, sua rotina e o que é importante para sua família.</p></div>
@@ -737,6 +848,35 @@
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         revealElements.forEach(function (element) { observer.observe(element); });
       } else { revealElements.forEach(function (element) { element.classList.add('is-visible'); }); }
+    }());
+
+    (function () {
+      var image = document.getElementById('hero-carousel-image');
+      var dots = Array.prototype.slice.call(document.querySelectorAll('.story-dot'));
+      if (!image || dots.length !== 3) return;
+      var current = 0, timer = null;
+      var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function showSlide(index) {
+        current = (index + 3) % 3;
+        image.style.backgroundPosition = 'center ' + [100, 0, 50][current] + '%';
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle('is-active', i === current);
+          dot.setAttribute('aria-pressed', i === current ? 'true' : 'false');
+        });
+      }
+      function restartTimer() {
+        if (timer) window.clearInterval(timer);
+        if (!reducedMotion) timer = window.setInterval(function () { showSlide(current + 1); }, 5000);
+      }
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          showSlide(Number(dot.getAttribute('data-slide')));
+          restartTimer();
+        });
+      });
+      image.style.backgroundImage = 'url("/assets/hero-carousel-sprite.webp")';
+      showSlide(0);
+      restartTimer();
     }());
   </script>
 </body>
