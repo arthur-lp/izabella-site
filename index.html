@@ -454,440 +454,102 @@
       *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
     }
 
-    /* Refinamento visual: primeira dobra mais leve e acolhedora */
-    :root {
-      --color-accent: #BD8064;
-      --color-warm: #F7F6F2;
-      --color-whatsapp: #58BE76;
-    }
-    h1 { font-weight: 600; letter-spacing: -.035em; }
-    .hero {
-      padding-top: 148px;
-      padding-bottom: 68px;
-      background: linear-gradient(135deg, #F8F7F3 0%, #F3F1EB 100%);
-    }
-    .hero-grid { align-items: center; gap: 54px; }
-    .hero-copy { max-width: 680px; }
-    .hero h1 {
-      max-width: 15ch;
-      margin-bottom: 20px;
-      font-size: clamp(2.65rem, 4.5vw, 4rem);
-      line-height: 1.13;
-      font-weight: 600;
-      letter-spacing: -.04em;
-      text-wrap: balance;
-    }
-    .hero h1 em { color: #B9785D; }
-    .hero-copy .lead {
-      max-width: 570px;
-      margin-bottom: 20px;
-      font-size: 1rem;
-      line-height: 1.72;
-    }
-    .hero-trust-line { margin-top: 14px; margin-bottom: 22px; line-height: 1.6; }
-    .hero-actions { gap: 12px; margin-bottom: 24px; }
-    .hero-actions .btn { min-height: 50px; }
-    .trust-row { gap: 8px; }
-    .trust-badge { background: rgba(232,240,236,.72); font-weight: 600; }
-    .hero-visual { min-height: 500px; }
-    .hero-photo { height: 500px; border-radius: 180px 180px 18px 18px; }
-    .hero-stamp { width: 138px; height: 138px; font-size: .75rem; }
-    .mobile-cta-bar {
-      background: rgba(255,255,255,.96);
-      border-top-color: rgba(229,221,211,.8);
-      box-shadow: 0 -8px 28px rgba(48,63,54,.07);
-      backdrop-filter: blur(12px);
-    }
-    .mobile-cta-bar a {
-      background: #58BE76;
-      box-shadow: 0 5px 14px rgba(45,95,79,.12);
-      font-weight: 600;
-      letter-spacing: -.01em;
-    }
-    @media (max-width: 860px) {
-      .hero { padding-top: 112px; padding-bottom: 42px; }
-      .hero-grid { gap: 28px; }
-      .hero-copy { max-width: 680px; }
-      .hero-visual { min-height: 500px; }
-      .hero-photo { height: 480px; }
-    }
-    @media (max-width: 620px) {
-      .container { width: min(var(--container), calc(100% - 40px)); }
-      .nav-wrap { min-height: 68px; }
-      .brand { gap: 10px; }
-      .brand-mark { width: 42px; height: 42px; flex-basis: 42px; border-radius: 12px; }
-      .brand-name { font-size: 1.12rem; }
-      .hero { padding: 104px 0 34px; }
-      .hero-grid { gap: 24px; }
-      .hero h1 {
-        max-width: 17ch;
-        margin-bottom: 17px;
-        font-size: clamp(2.05rem, 9.1vw, 2.65rem);
-        line-height: 1.13;
-        letter-spacing: -.04em;
-      }
-      .hero-copy .lead { margin-bottom: 16px; font-size: .98rem; line-height: 1.62; }
-      .hero-trust-line { margin: 12px 0 20px; font-size: .78rem; line-height: 1.55; }
-      .hero-actions { gap: 10px; margin-bottom: 20px; }
-      .hero-actions .btn { min-height: 49px; }
-      .hero-actions .btn-light { background: rgba(255,255,255,.72); }
-      .trust-row { grid-template-columns: 1fr 1fr; gap: 8px; }
-      .trust-badge { min-height: 34px; font-size: .68rem; line-height: 1.35; }
-      .hero-visual { min-height: 410px; }
-      .hero-photo { width: 78%; height: 390px; border-radius: 150px 150px 16px 16px; }
-      .hero-stamp { left: 3%; bottom: -5px; width: 112px; height: 112px; padding: 12px; font-size: .64rem; }
-      .hero-stamp svg { width: 23px; height: 23px; }
-      /* A barra fixa já oferece o acesso principal ao WhatsApp no celular. */
-      .whatsapp-float { display: none; }
-      .mobile-cta-bar { padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); }
-      .mobile-cta-bar a { min-height: 52px; font-size: .96rem; }
-      body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
-    }
   
-    .hero-carousel-card {
-      position: relative;
-      width: 100%;
-      max-width: 430px;
-      aspect-ratio: 2 / 3;
-      margin-inline: auto;
-      overflow: hidden;
-      border-radius: 190px 190px 22px 22px;
-      background: #e8e4da;
-      box-shadow: 0 22px 55px rgba(42, 62, 50, .13);
+    /* Hero editorial em formato de stories */
+    .story-hero {
+      position: relative; min-height: 100svh; display: flex; align-items: center;
+      padding: 112px 0 94px; overflow: hidden;
+      background: linear-gradient(145deg, #F8F7F3 0%, #F1EFE9 100%);
     }
-    .hero-carousel-image {
-      position: absolute;
-      inset: 0;
-      background-repeat: no-repeat;
-      background-size: 100% 300%;
-      background-position: center 0%;
-      transition: background-position .9s cubic-bezier(.2,.7,.2,1);
+    .story-hero::after {
+      content: ""; position: absolute; width: min(58vw,720px); aspect-ratio: 1;
+      right: -18vw; bottom: -45%; border: 1px solid rgba(189,128,100,.18);
+      border-radius: 50%; pointer-events: none;
     }
-    .hero-carousel-overlay {
-      position: absolute;
-      inset: auto 0 0;
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 58px 22px 20px;
-      color: #fff;
-      background: linear-gradient(transparent, rgba(24, 42, 33, .62));
+    .story-layout {
+      position: relative; z-index: 1; display: grid;
+      grid-template-columns: minmax(0,1fr) minmax(340px,.82fr);
+      grid-template-rows: 1fr auto; align-items: center;
+      gap: 18px clamp(36px,7vw,100px);
+      width: min(var(--container),calc(100% - 48px));
+      min-height: calc(100svh - 206px);
     }
-    .hero-carousel-caption { max-width: 230px; font-size: .9rem; line-height: 1.4; font-weight: 600; }
-    .hero-carousel-dots { display: flex; gap: 7px; flex-shrink: 0; }
-    .hero-carousel-dot {
-      width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%;
-      background: rgba(255,255,255,.58); cursor: pointer;
-      transition: transform .2s ease, background .2s ease;
+    .story-heading { max-width: 590px; }
+    .story-eyebrow { margin: 0 0 18px; color: var(--color-accent); font-size: .76rem; font-weight: 700; letter-spacing: .13em; line-height: 1.5; text-transform: uppercase; }
+    .story-heading h1 {
+      margin: 0; color: var(--color-primary-dark); font-family: 'Playfair Display',Georgia,serif;
+      font-size: clamp(3rem,5.6vw,5.6rem); font-weight: 600; line-height: 1.06;
+      letter-spacing: -.045em; text-wrap: balance;
     }
-    .hero-carousel-dot.is-active { background: #fff; transform: scale(1.3); }
-    .hero-carousel-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-    .hero-carousel-card .hero-stamp { z-index: 2; }
-    @media (max-width: 620px) {
-      .hero-carousel-card { max-width: 360px; border-radius: 150px 150px 18px 18px; }
-      .hero-carousel-overlay { padding: 48px 17px 17px; }
-      .hero-carousel-caption { font-size: .82rem; }
+    .story-heading h1 em { color: var(--color-accent); font-style: normal; }
+    .story-audience { margin: 24px 0 0; color: var(--color-primary); font-size: .94rem; font-weight: 600; }
+    .story-card {
+      position: relative; justify-self: center; width: min(100%,440px); aspect-ratio: 2 / 3;
+      max-height: min(66svh,680px); overflow: hidden; isolation: isolate;
+      border-radius: 190px 190px 22px 22px; background: #e9e5dd;
+      box-shadow: 0 24px 64px rgba(42,62,50,.15);
     }
-    @media (prefers-reduced-motion: reduce) {
-      .hero-carousel-image, .hero-carousel-dot { transition: none; }
+    .story-photo {
+      position: absolute; inset: 0; background-color: #e9e5dd; background-repeat: no-repeat;
+      background-size: 100% 300%; background-position: center 0%;
+      transition: background-position .85s cubic-bezier(.2,.7,.2,1);
     }
-    /* Carrossel independente da foto profissional da Izabella */
-    .hero-intro-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 176px;
-      align-items: start;
-      gap: 18px;
-      margin-bottom: 20px;
+    .story-shade { position: absolute; inset: 48% 0 0; background: linear-gradient(transparent,rgba(20,38,30,.62)); pointer-events: none; }
+    .story-card-footer {
+      position: absolute; right: 0; bottom: 0; left: 0; display: flex; align-items: end;
+      justify-content: space-between; gap: 12px; padding: 50px 22px 22px;
+      color: #fff; font-size: .84rem; font-weight: 600; line-height: 1.4;
     }
-    .hero-intro-row h1 { margin: 0; min-width: 0; }
-    .hero-intro-row .hero-carousel-card {
-      position: relative;
-      width: 100%;
-      max-width: none;
-      aspect-ratio: 2 / 3;
-      margin: 4px 0 0;
-      overflow: hidden;
-      border-radius: 76px 76px 16px 16px;
-      background: #e8e4da;
-      box-shadow: 0 14px 34px rgba(42,62,50,.13);
-    }
-    .hero-carousel-image {
-      position: absolute;
-      inset: 0;
-      background-repeat: no-repeat;
-      background-size: 100% 300%;
-      background-position: center 0%;
-      transition: background-position .9s cubic-bezier(.2,.7,.2,1);
-    }
-    .hero-carousel-overlay {
-      position: absolute;
-      inset: auto 0 0;
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 8px;
-      padding: 46px 12px 13px;
-      color: #fff;
-      background: linear-gradient(transparent, rgba(24,42,33,.68));
-    }
-    .hero-carousel-caption { max-width: 150px; font-size: .72rem; line-height: 1.35; font-weight: 600; }
-    .hero-carousel-dots { display: flex; gap: 6px; flex-shrink: 0; }
-    .hero-carousel-dot {
-      width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%;
-      background: rgba(255,255,255,.58); cursor: pointer;
-      transition: transform .2s ease, background .2s ease;
-    }
-    .hero-carousel-dot.is-active { background: #fff; transform: scale(1.3); }
-    .hero-carousel-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-    .hero-visual { position: relative; min-height: 500px; }
-    .hero-visual .hero-photo { display: block; position: relative; inset: auto; width: min(100%,404px); height: 500px; margin-left: auto; object-fit: cover; object-position: center 18%; border-radius: 180px 180px 18px 18px; filter: drop-shadow(0 12px 18px rgba(0,0,0,.10)); }
-    .hero-visual .hero-stamp { bottom: 22px; left: -28px; }
+    .story-card-footer > span { max-width: 230px; }
+    .story-dots { display: flex; flex-shrink: 0; gap: 8px; }
+    .story-dot { width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.58); cursor: pointer; transition: transform .2s ease,background .2s ease; }
+    .story-dot.is-active { background: #fff; transform: scale(1.3); }
+    .story-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+    .story-scroll { grid-column: 1 / -1; justify-self: center; display: inline-flex; align-items: center; gap: 9px; padding: 5px 12px; color: var(--color-primary); font-size: .8rem; font-weight: 600; text-decoration: none; opacity: .82; }
+    /* Apresentação da profissional */
+    .profile-section { padding: 104px 0; background: #fff; }
+    .profile-layout { display: grid; grid-template-columns: minmax(260px,.78fr) minmax(0,1.22fr); align-items: center; gap: clamp(42px,7vw,92px); }
+    .profile-image-frame { width: 100%; max-width: 420px; justify-self: center; overflow: hidden; border-radius: 190px 190px 20px 20px; background: var(--color-warm); box-shadow: var(--shadow-soft); }
+    .profile-image-frame img { display: block; width: 100%; max-width: 100%; height: auto; object-fit: contain; }
+    .profile-copy { min-width: 0; }
+    .profile-copy h2 { margin: 0 0 22px; color: var(--color-primary-dark); font-family: 'Playfair Display',Georgia,serif; font-size: clamp(2.4rem,4.2vw,4rem); line-height: 1.12; letter-spacing: -.035em; text-wrap: balance; }
+    .profile-copy h2 span { color: var(--color-accent); }
+    .profile-copy p { color: var(--color-text-muted); }
+    .profile-copy .profile-lead { color: var(--color-primary-dark); font-size: 1.12rem; font-weight: 500; }
+    .profile-credentials { display: flex; flex-wrap: wrap; gap: 9px; margin: 24px 0 28px; }
+    .profile-credentials span { padding: 8px 13px; color: var(--color-primary); background: var(--color-primary-tint); border: 1px solid rgba(91,138,122,.18); border-radius: 999px; font-size: .76rem; font-weight: 700; }
+    .profile-cta { display: inline-flex; }
     @media (max-width: 860px) {
-      .hero-grid { grid-template-columns: minmax(0,1fr); }
-      .hero-copy { max-width: none; }
-      .hero-visual { min-height: 480px; }
-      .hero-visual .hero-photo { width: min(78%,404px); height: 460px; margin-inline: auto; }
-      .hero-visual .hero-stamp { left: calc(50% - 265px); }
+      .story-layout { grid-template-columns: minmax(0,1fr) minmax(270px,.82fr); gap: 22px; }
+      .story-heading h1 { font-size: clamp(2.7rem,6vw,4.1rem); }
+      .profile-layout { grid-template-columns: minmax(230px,.8fr) minmax(0,1.2fr); gap: 32px; }
     }
     @media (max-width: 620px) {
-      .hero { padding: 104px 0 34px; }
-      .hero-intro-row {
-        grid-template-columns: minmax(0,1fr) minmax(112px,36%);
-        gap: 11px;
-        align-items: start;
-        margin-bottom: 18px;
+      .story-hero { min-height: 100svh; padding: 96px 0 calc(86px + env(safe-area-inset-bottom)); }
+      .story-layout {
+        width: min(var(--container),calc(100% - 36px)); min-height: 0;
+        grid-template-columns: minmax(0,1fr) minmax(142px,43%);
+        grid-template-rows: 1fr auto; align-items: center; gap: 12px;
       }
-      .hero-intro-row h1 {
-        max-width: none;
-        font-size: clamp(1.55rem,6.15vw,2.15rem);
-        line-height: 1.12;
-        letter-spacing: -.045em;
-        text-wrap: pretty;
-      }
-      .hero-intro-row .hero-carousel-card {
-        width: 100%;
-        aspect-ratio: 2 / 3;
-        margin-top: 2px;
-        border-radius: 58px 58px 12px 12px;
-      }
-      .hero-carousel-overlay { padding: 35px 8px 10px; gap: 5px; }
-      .hero-carousel-caption { display: none; }
-      .hero-carousel-dots { gap: 6px; }
-      .hero-carousel-dot { width: 7px; height: 7px; }
-      .hero-copy .lead { max-width: none; margin-bottom: 16px; font-size: .96rem; line-height: 1.58; }
-      .hero-trust-line { margin: 10px 0 18px; font-size: .76rem; }
-      .hero-actions { gap: 10px; margin-bottom: 18px; }
-      .hero-actions .btn { min-height: 48px; }
-      .trust-row { grid-template-columns: 1fr 1fr; gap: 8px; }
-      .trust-badge { min-height: 34px; font-size: .66rem; }
-      .hero-visual { min-height: 390px; }
-      .hero-visual .hero-photo { width: 78%; height: 380px; border-radius: 130px 130px 16px 16px; }
-      .hero-visual .hero-stamp { left: 3%; bottom: -5px; width: 108px; height: 108px; padding: 12px; font-size: .64rem; }
-      .whatsapp-float { display: none; }
-      .mobile-cta-bar { padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); }
-      .mobile-cta-bar a { min-height: 52px; font-size: .96rem; }
-      body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+      .story-heading { max-width: none; }
+      .story-eyebrow { margin-bottom: 10px; font-size: .59rem; letter-spacing: .1em; }
+      .story-heading h1 { font-size: clamp(1.85rem,7.6vw,2.65rem); line-height: 1.08; letter-spacing: -.045em; text-wrap: pretty; }
+      .story-audience { margin-top: 14px; font-size: .76rem; line-height: 1.45; }
+      .story-card { width: 100%; max-height: none; aspect-ratio: 2 / 3; border-radius: 78px 78px 14px 14px; }
+      .story-card-footer { padding: 36px 10px 12px; gap: 5px; }
+      .story-card-footer > span { max-width: 100px; font-size: .64rem; }
+      .story-dots { gap: 6px; }
+      .story-dot { width: 7px; height: 7px; }
+      .story-scroll { padding: 4px 8px; font-size: .72rem; }
+      .profile-section { padding: 70px 0 84px; }
+      .profile-layout { grid-template-columns: minmax(0,1fr); gap: 30px; }
+      .profile-image-frame { width: min(100%,330px); max-width: 330px; border-radius: 145px 145px 16px 16px; }
+      .profile-image-frame img { width: 100%; height: auto; }
+      .profile-copy h2 { font-size: clamp(2.25rem,9vw,3rem); }
+      .profile-credentials { align-items: flex-start; flex-direction: column; }
+      .profile-cta { display: flex; width: 100%; justify-content: center; text-align: center; }
     }
-    @media (prefers-reduced-motion: reduce) {
-      .hero-carousel-image, .hero-carousel-dot { transition: none; }
-    }
-    /* Primeira dobra em formato de story: título + carrossel */
-    .hero-story {
-      min-height: 100svh;
-      display: flex;
-      align-items: stretch;
-      padding: 132px 0 28px;
-      overflow: hidden;
-      background: linear-gradient(155deg, #F8F7F3 0%, #F0EEE7 100%);
-    }
-    .hero-story-layout {
-      width: min(100% - 48px, 1180px);
-      min-height: calc(100svh - 160px);
-      display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(340px, .72fr);
-      grid-template-rows: 1fr auto;
-      align-items: center;
-      justify-content: center;
-      column-gap: clamp(38px, 7vw, 100px);
-      row-gap: 12px;
-    }
-    .hero-story-heading { align-self: center; max-width: 600px; }
-    .hero-story-kicker {
-      margin: 0 0 18px;
-      color: var(--color-accent);
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .hero-story h1 {
-      margin: 0;
-      color: var(--color-primary-dark);
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(3.1rem, 6.2vw, 6.3rem);
-      line-height: 1.04;
-      letter-spacing: -.045em;
-      font-weight: 600;
-      text-wrap: balance;
-    }
-    .hero-story h1 em { color: #B9785D; font-style: normal; }
-    .hero-story .hero-carousel-card {
-      position: relative;
-      width: min(100%, 440px);
-      height: min(66svh, 700px);
-      min-height: 420px;
-      aspect-ratio: 2 / 3;
-      justify-self: center;
-      overflow: hidden;
-      border-radius: 190px 190px 24px 24px;
-      background: #e8e4da;
-      box-shadow: 0 24px 64px rgba(42,62,50,.16);
-    }
-    .hero-carousel-image {
-      position: absolute;
-      inset: 0;
-      background-repeat: no-repeat;
-      background-size: 100% 300%;
-      background-position: center 0%;
-      transition: background-position .9s cubic-bezier(.2,.7,.2,1);
-    }
-    .hero-story-shade {
-      position: absolute;
-      inset: 35% 0 0;
-      background: linear-gradient(transparent, rgba(20,38,30,.58));
-      pointer-events: none;
-    }
-    .hero-story-bottom {
-      position: absolute;
-      inset: auto 0 0;
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 14px;
-      padding: 55px 24px 23px;
-      color: #fff;
-      font-size: .9rem;
-      font-weight: 600;
-      line-height: 1.4;
-    }
-    .hero-story-bottom > span { max-width: 250px; }
-    .hero-carousel-dots { display: flex; gap: 8px; flex-shrink: 0; }
-    .hero-carousel-dot {
-      width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%;
-      background: rgba(255,255,255,.55); cursor: pointer;
-      transition: transform .2s ease, background .2s ease;
-    }
-    .hero-carousel-dot.is-active { background: #fff; transform: scale(1.28); }
-    .hero-carousel-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
-    .hero-story-next {
-      grid-column: 1 / -1;
-      justify-self: center;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      color: var(--color-primary);
-      font-size: .82rem;
-      font-weight: 600;
-      text-decoration: none;
-      opacity: .8;
-    }
-    .izabella-profile { padding: 100px 0; background: #fff; }
-    .izabella-profile-grid {
-      display: grid;
-      grid-template-columns: minmax(280px, .78fr) minmax(0, 1.22fr);
-      align-items: center;
-      gap: clamp(40px, 7vw, 90px);
-    }
-    .izabella-profile-photo-wrap {
-      width: 100%;
-      max-width: 430px;
-      justify-self: center;
-      overflow: hidden;
-      border-radius: 190px 190px 22px 22px;
-      background: var(--color-warm);
-      box-shadow: var(--shadow-soft);
-    }
-    .izabella-profile-photo {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      object-position: center 18%;
-    }
-    .izabella-profile-copy { min-width: 0; }
-    .izabella-profile-copy h2 {
-      margin: 0 0 20px;
-      color: var(--color-primary-dark);
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.5rem, 4.6vw, 4.2rem);
-      line-height: 1.08;
-    }
-    .izabella-profile-copy h2 span { color: var(--color-accent); }
-    .izabella-profile-copy p { color: var(--color-text-muted); }
-    .izabella-profile-copy .izabella-profile-lead { color: var(--color-primary-dark); font-size: 1.16rem; font-weight: 500; }
-    .izabella-profile-copy .hero-trust-line { margin: 24px 0 18px; font-weight: 600; }
-    .izabella-profile-copy .trust-row { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 25px; }
-    .izabella-profile-copy .trust-badge { min-height: 36px; padding: 8px 13px; border-radius: 999px; color: var(--color-primary); background: var(--color-primary-tint); font-size: .76rem; font-weight: 600; }
-    .izabella-profile-copy .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    @media (max-width: 860px) {
-      .hero-story { padding-top: 112px; }
-      .hero-story-layout { grid-template-columns: minmax(0,1fr) minmax(280px,.82fr); column-gap: 28px; }
-      .hero-story h1 { font-size: clamp(2.8rem,6vw,4.2rem); }
-      .hero-story .hero-carousel-card { height: min(64svh,620px); min-height: 390px; }
-      .izabella-profile-grid { grid-template-columns: minmax(240px,.8fr) minmax(0,1.2fr); gap: 34px; }
-    }
-    @media (max-width: 620px) {
-      .hero-story {
-        min-height: calc(100svh - 68px);
-        height: calc(100svh - 68px);
-        padding: 104px 0 16px;
-      }
-      .hero-story-layout {
-        width: min(100% - 36px, 440px);
-        min-height: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto minmax(0,1fr) auto;
-        align-items: center;
-        justify-items: center;
-        gap: 12px;
-      }
-      .hero-story-heading { width: 100%; max-width: 440px; text-align: left; }
-      .hero-story-kicker { margin-bottom: 7px; font-size: .62rem; letter-spacing: .12em; }
-      .hero-story h1 {
-        max-width: 17ch;
-        font-size: clamp(2rem, 8.2vw, 2.8rem);
-        line-height: 1.04;
-        letter-spacing: -.04em;
-      }
-      .hero-story .hero-carousel-card {
-        width: auto;
-        height: min(57svh, 530px);
-        min-height: 0;
-        max-width: 100%;
-        aspect-ratio: 2 / 3;
-        justify-self: center;
-        border-radius: 125px 125px 18px 18px;
-      }
-      .hero-story-bottom { padding: 42px 16px 16px; font-size: .78rem; }
-      .hero-story-bottom > span { max-width: 205px; }
-      .hero-story .hero-carousel-dot { width: 8px; height: 8px; }
-      .hero-story-next { padding: 2px 10px; font-size: .74rem; }
-      .izabella-profile { padding: 66px 0 76px; }
-      .izabella-profile-grid { grid-template-columns: minmax(0,1fr); gap: 28px; }
-      .izabella-profile-photo-wrap { width: min(100%, 340px); max-width: 340px; border-radius: 145px 145px 18px 18px; }
-      .izabella-profile-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
-      .izabella-profile-copy h2 { font-size: clamp(2.35rem, 10vw, 3rem); }
-      .izabella-profile-copy .trust-row { display: flex; flex-direction: column; align-items: flex-start; }
-      .izabella-profile-copy .hero-actions { flex-direction: column; align-items: stretch; }
-      .izabella-profile-copy .hero-actions .btn { width: 100%; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .hero-carousel-image, .hero-carousel-dot { transition: none; }
-    }
+    @media (prefers-reduced-motion: reduce) { .story-photo,.story-dot { transition: none; } }
 </style>
   <!-- Schema.org: dados estruturados do atendimento profissional -->
   <script type="application/ld+json">
@@ -937,48 +599,45 @@
 
   <main id="conteudo">
     <!-- 1. Hero -->
-    <section class="hero hero-story" id="inicio" aria-labelledby="hero-title">
-      <div class="container hero-story-layout">
-        <div class="hero-story-heading">
-          <p class="hero-story-kicker">Fonoaudiologia domiciliar · Belo Horizonte</p>
-          <h1 id="hero-title">Cuidado que transforma <em>comunicação em conexão.</em></h1>
+    <section class="hero story-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container story-layout">
+        <div class="story-heading">
+          <p class="story-eyebrow">Fonoaudiologia domiciliar · Belo Horizonte</p>
+          <h1 id="hero-title">Cuidado que acolhe. <em>Comunicação que transforma.</em></h1>
+          <p class="story-audience">Atendimento para adultos e idosos</p>
         </div>
-        <div class="hero-carousel-card" aria-label="Stories de atendimentos fonoaudiológicos">
-          <div class="hero-carousel-image" id="hero-carousel-image" role="img" aria-label="Registros de atendimentos fonoaudiológicos domiciliares"></div>
-          <div class="hero-story-shade"></div>
-          <div class="hero-story-bottom">
-            <span>Um cuidado próximo, individualizado e humano.</span>
-            <div class="hero-carousel-dots" role="group" aria-label="Selecionar foto do atendimento">
-              <button type="button" class="hero-carousel-dot is-active" aria-label="Ver foto 1" aria-pressed="true" data-slide="0"></button>
-              <button type="button" class="hero-carousel-dot" aria-label="Ver foto 2" aria-pressed="false" data-slide="1"></button>
-              <button type="button" class="hero-carousel-dot" aria-label="Ver foto 3" aria-pressed="false" data-slide="2"></button>
+        <div class="story-card" aria-label="Fotos de atendimentos fonoaudiológicos">
+          <div class="story-photo" id="hero-carousel-image" role="img" aria-label="Atendimento fonoaudiológico domiciliar"></div>
+          <div class="story-shade"></div>
+          <div class="story-card-footer">
+            <span>Um cuidado próximo, no conforto de casa.</span>
+            <div class="story-dots" role="group" aria-label="Escolher foto">
+              <button type="button" class="story-dot is-active" data-slide="0" aria-label="Foto 1" aria-pressed="true"></button>
+              <button type="button" class="story-dot" data-slide="1" aria-label="Foto 2" aria-pressed="false"></button>
+              <button type="button" class="story-dot" data-slide="2" aria-label="Foto 3" aria-pressed="false"></button>
             </div>
           </div>
         </div>
-        <a class="hero-story-next" href="#izabella" aria-label="Conheça Izabella">Conheça a profissional <span aria-hidden="true">↓</span></a>
+        <a class="story-scroll" href="#izabella">Conheça a Izabella <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <section class="section izabella-profile" id="izabella" aria-labelledby="izabella-title">
-      <div class="container izabella-profile-grid">
-        <div class="izabella-profile-photo-wrap">
-          <img class="izabella-profile-photo" src="/izabella-profissional.webp" alt="Izabella Miranda Ferreira, fonoaudióloga" width="864" height="1435" loading="lazy" decoding="async">
+    <section class="section profile-section" id="izabella" aria-labelledby="izabella-title">
+      <div class="container profile-layout">
+        <div class="profile-image-frame">
+          <img src="/izabella-profissional.webp" alt="Izabella Miranda Ferreira, fonoaudióloga" width="864" height="1435" loading="lazy" decoding="async">
         </div>
-        <div class="izabella-profile-copy">
-          <p class="eyebrow">Quem vai cuidar de você</p>
-          <h2 id="izabella-title">Prazer, sou <span>Izabella.</span></h2>
-          <p class="izabella-profile-lead">Sou fonoaudióloga e levo atendimento especializado até a casa de adultos e idosos em Belo Horizonte.</p>
+        <div class="profile-copy">
+          <p class="eyebrow">Prazer, sou a Izabella</p>
+          <h2 id="izabella-title">Cuidado individualizado, com <span>técnica e afeto.</span></h2>
+          <p class="profile-lead">Sou fonoaudióloga e levo atendimento especializado até a casa de adultos e idosos em Belo Horizonte.</p>
           <p>Atuo em disfagia, reabilitação após AVC e condições neurológicas, voz e comunicação. Sou graduada pela UFMG e tenho Residência Hospitalar em Saúde do Adulto e Idoso pelo Hospital Risoleta Tolentino Neves.</p>
-          <p class="hero-trust-line">Atendimento domiciliar em Belo Horizonte · Adultos e idosos · Cuidado individualizado</p>
-          <div class="trust-row" aria-label="Credenciais">
-            <span class="trust-badge">CRFa/MG ativo</span>
-            <span class="trust-badge">Pós-graduada em Saúde do Adulto e Idoso</span>
-            <span class="trust-badge">Experiência clínica e hospitalar</span>
+          <div class="profile-credentials">
+            <span>CRFa/MG ativo</span>
+            <span>Graduação pela UFMG</span>
+            <span>Residência Hospitalar</span>
           </div>
-          <div class="hero-actions">
-            <a class="btn btn-whatsapp" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
-            <a class="btn btn-light" href="#especialidades">Conhecer especialidades</a>
-          </div>
+          <a class="btn btn-whatsapp profile-cta" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">Conversar com a Izabella pelo WhatsApp</a>
         </div>
       </div>
     </section>
@@ -1190,13 +849,12 @@
         revealElements.forEach(function (element) { observer.observe(element); });
       } else { revealElements.forEach(function (element) { element.classList.add('is-visible'); }); }
     }());
-  
+
     (function () {
       var image = document.getElementById('hero-carousel-image');
-      var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-carousel-dot'));
-      if (!image || !dots.length) return;
-      var current = 0;
-      var timer = null;
+      var dots = Array.prototype.slice.call(document.querySelectorAll('.story-dot'));
+      if (!image || dots.length !== 3) return;
+      var current = 0, timer = null;
       var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       function showSlide(index) {
         current = (index + 3) % 3;
@@ -1206,21 +864,24 @@
           dot.setAttribute('aria-pressed', i === current ? 'true' : 'false');
         });
       }
+      function restartTimer() {
+        if (timer) window.clearInterval(timer);
+        if (!reducedMotion) timer = window.setInterval(function () { showSlide(current + 1); }, 5000);
+      }
       dots.forEach(function (dot) {
         dot.addEventListener('click', function () {
           showSlide(Number(dot.getAttribute('data-slide')));
-          if (timer) { clearInterval(timer); timer = null; }
-          if (!reducedMotion) timer = setInterval(function () { showSlide(current + 1); }, 5000);
+          restartTimer();
         });
       });
       fetch('/assets/hero-carousel-sprite.jpg.b64')
-        .then(function (response) { if (!response.ok) throw new Error('Imagem indisponível'); return response.text(); })
+        .then(function (response) { if (!response.ok) throw new Error('Fotos indisponíveis'); return response.text(); })
         .then(function (encoded) {
           image.style.backgroundImage = 'url("data:image/jpeg;base64,' + encoded.trim() + '")';
-          if (!reducedMotion) timer = setInterval(function () { showSlide(current + 1); }, 5000);
+          showSlide(0); restartTimer();
         })
         .catch(function () { image.style.backgroundImage = 'url("/izabella-profissional.webp")'; });
     }());
-</script>
+  </script>
 </body>
 </html>
