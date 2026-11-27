@@ -525,33 +525,67 @@
       .profile-layout { grid-template-columns: minmax(230px,.8fr) minmax(0,1.2fr); gap: 32px; }
     }
     @media (max-width: 620px) {
-      .story-hero { min-height: 100svh; padding: 96px 0 calc(86px + env(safe-area-inset-bottom)); }
+      /* Mobile: medidas proporcionais à referência enviada (layout vertical). */
+      .story-hero { min-height: 0; display: block; padding: 30px 0 36px; }
       .story-layout {
-        width: min(var(--container),calc(100% - 36px));
-        min-height: calc(100svh - 206px);
-        grid-template-columns: minmax(0,1fr) minmax(142px,43%);
-        grid-template-rows: 1fr auto; align-items: center; gap: 12px;
+        box-sizing: border-box; display: grid;
+        width: min(var(--container),calc(100% - 40px));
+        min-height: 0; height: auto; padding: 0;
+        grid-template-columns: minmax(0,1fr);
+        grid-template-rows: auto auto auto auto;
+        align-items: stretch; justify-items: stretch; gap: 0;
       }
-      .story-heading { max-width: none; padding-top: 42px; }
+      .story-heading {
+        display: flex; flex-direction: column; justify-content: flex-start;
+        width: 100%; max-width: none; min-width: 0; height: auto; padding: 0;
+      }
       .story-heading .story-eyebrow {
-        position: absolute; top: 0; left: 0; width: 100%;
-        margin: 0; font-size: .66rem; letter-spacing: .11em;
+        position: static; width: auto; margin: 0 0 19px;
+        font-size: .72rem; letter-spacing: .09em; line-height: 1.45;
       }
-      .story-heading h1 { font-size: clamp(1.85rem,7.6vw,2.65rem); line-height: 1.08; letter-spacing: -.045em; text-wrap: pretty; }
-      .story-audience { margin-top: 14px; font-size: .76rem; line-height: 1.45; }
-      .story-card { width: 100%; max-height: none; aspect-ratio: 2 / 3; border-radius: 78px 78px 14px 14px; }
-      .story-card-footer { padding: 36px 10px 12px; gap: 5px; }
-      .story-card-footer > span { max-width: 100px; font-size: .64rem; }
-      .story-dots { gap: 6px; }
-      .story-dot { width: 7px; height: 7px; }
+      .story-heading h1 {
+        max-width: 100%; font-size: clamp(2.45rem,8.8vw,2.65rem);
+        line-height: 1.04; letter-spacing: -.045em; text-wrap: balance;
+      }
+      .story-audience { max-width: 100%; margin: 18px 0 0; font-size: 1.08rem; line-height: 1.45; }
+      .story-media {
+        grid-column: 1; width: 100%; max-width: none; min-width: 0;
+        margin-top: 24px;
+      }
+      .story-card {
+        justify-self: stretch; width: 100%; max-width: none;
+        height: auto; min-height: 0; aspect-ratio: 1.43 / 1;
+        border-radius: 108px 108px 18px 18px;
+      }
+      .story-photo { background-size: 100% 300%; background-position-x: center; }
+      .story-card-footer { padding: 42px 18px 18px; font-size: 1rem; }
+      .story-card-footer > span { max-width: 78%; }
+      .story-dots {
+        position: static; display: flex; justify-content: center; gap: 10px;
+        margin: 13px auto 0; padding: 0;
+      }
+      .story-dot { width: 10px; height: 10px; background: rgba(45,95,79,.42); }
+      .story-dot.is-active { background: var(--color-primary-dark); transform: scale(1.18); }
+      .mobile-cta-bar {
+        display: block; position: static; grid-column: 1; width: 100%;
+        margin-top: 24px; padding: 0; background: transparent;
+        border: 0; box-shadow: none;
+      }
+      .mobile-cta-bar a {
+        display: flex; width: 100%; min-height: 64px; padding: 12px 20px;
+        align-items: center; justify-content: center; gap: 12px;
+        font-size: 1.12rem; border-radius: 999px;
+        box-shadow: 0 8px 14px rgba(0,0,0,.16);
+      }
+      .mobile-cta-bar a svg { width: 24px !important; height: 24px !important; }
+      .whatsapp-float { bottom: 22px; }
+      body { padding-bottom: 0; }
       .story-scroll {
-        gap: 12px; padding: 13px 22px; margin-top: 8px;
-        color: var(--color-primary-dark); background: #fff;
-        border: 1px solid rgba(45,95,79,.16); border-radius: 999px;
-        box-shadow: 0 8px 22px rgba(45,95,79,.10);
-        font-size: .96rem; font-weight: 700; opacity: 1;
+        grid-column: 1; justify-self: center; margin-top: 23px;
+        padding: 0; color: var(--color-primary-dark);
+        font-size: 1.22rem; font-weight: 600; opacity: 1; gap: 12px;
       }
-      .story-scroll span { font-size: 1.2rem; }
+      .story-scroll span { font-size: 1.65rem; }
       .profile-section { padding: 70px 0 84px; }
       .profile-layout { grid-template-columns: minmax(0,1fr); gap: 30px; }
       .profile-image-frame { width: min(100%,330px); max-width: 330px; border-radius: 145px 145px 16px 16px; }
@@ -617,18 +651,26 @@
           <h1 id="hero-title">Cuidado que acolhe. <em>Comunicação que transforma.</em></h1>
           <p class="story-audience">Atendimento para adultos e idosos</p>
         </div>
-        <div class="story-card" aria-label="Fotos de atendimentos fonoaudiológicos">
-          <div class="story-photo" id="hero-carousel-image" role="img" aria-label="Atendimento fonoaudiológico domiciliar"></div>
-          <div class="story-shade"></div>
-          <div class="story-card-footer">
-            <span>Um cuidado próximo, no conforto de casa.</span>
-            <div class="story-dots" role="group" aria-label="Escolher foto">
-              <button type="button" class="story-dot is-active" data-slide="0" aria-label="Foto 1" aria-pressed="true"></button>
-              <button type="button" class="story-dot" data-slide="1" aria-label="Foto 2" aria-pressed="false"></button>
-              <button type="button" class="story-dot" data-slide="2" aria-label="Foto 3" aria-pressed="false"></button>
+        <div class="story-media">
+          <div class="story-card" aria-label="Fotos de atendimentos fonoaudiológicos">
+            <div class="story-photo" id="hero-carousel-image" role="img" aria-label="Atendimento fonoaudiológico domiciliar"></div>
+            <div class="story-shade"></div>
+            <div class="story-card-footer">
+              <span>Um cuidado próximo, no conforto de casa.</span>
             </div>
           </div>
+          <div class="story-dots" role="group" aria-label="Escolher foto">
+            <button type="button" class="story-dot is-active" data-slide="0" aria-label="Foto 1" aria-pressed="true"></button>
+            <button type="button" class="story-dot" data-slide="1" aria-label="Foto 2" aria-pressed="false"></button>
+            <button type="button" class="story-dot" data-slide="2" aria-label="Foto 3" aria-pressed="false"></button>
+          </div>
         </div>
+  <div class="mobile-cta-bar">
+    <a href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:20px;height:20px;"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Z"/></svg>
+      Agendar pelo WhatsApp
+    </a>
+  </div>
         <a class="story-scroll" href="#izabella">Conheça a Izabella <span aria-hidden="true">↓</span></a>
       </div>
     </section>
@@ -784,12 +826,7 @@
     <div class="container footer-grid"><a class="brand footer-brand" href="#inicio" aria-label="Voltar ao início"><span class="brand-mark" aria-hidden="true">IM</span><span class="brand-name">Izabella Miranda</span></a><div class="footer-info"><span>Izabella Miranda Ferreira · Fonoaudióloga</span><span>CRFa/MG ativo</span><a href="mailto:fonoizabellamfr@gmail.com">fonoizabellamfr@gmail.com</a></div><div class="footer-copy"><span>© <span id="current-year"></span> Izabella Miranda</span><span>Fonoaudiologia domiciliar</span></div></div>
   </footer>
 
-  <div class="mobile-cta-bar">
-    <a href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:20px;height:20px;"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Z"/></svg>
-      Agendar pelo WhatsApp
-    </a>
-  </div>
+
 
   <a class="whatsapp-float" href="https://wa.me/5531992024967?text=Ol%C3%A1%20Izabella!%20Gostaria%20de%20agendar%20uma%20consulta%20fonoaudiol%C3%B3gica%20domiciliar." target="_blank" rel="noopener noreferrer" aria-label="Falar com Izabella pelo WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.99 11.99 0 0 0 12 24h.01C18.63 24 24 18.63 24 12c0-3.2-1.25-6.2-3.5-8.5Zm-8.49 18.45h-.01a9.96 9.96 0 0 1-5.08-1.39l-.36-.21-3.67.96.98-3.57-.23-.37A9.96 9.96 0 1 1 12.01 21.95Zm5.47-7.47c-.3-.15-1.77-.87-2.05-.97-.28-.1-.48-.15-.69.15-.2.3-.79.97-.97 1.17-.18.2-.36.23-.66.08-1.78-.89-2.95-1.59-4.13-3.61-.31-.54.31-.5.89-1.66.1-.2.05-.36-.03-.51-.08-.15-.69-1.66-.94-2.28-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.51.08-.79.38-.28.3-1.02 1-1.02 2.44s1.05 2.83 1.2 3.03c.15.2 2.06 3.15 5 4.42 1.86.8 2.59.87 3.52.73.57-.09 1.77-.72 2.02-1.42.25-.69.25-1.28.18-1.4-.08-.13-.28-.2-.58-.35Z"/></svg>
