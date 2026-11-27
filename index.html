@@ -874,7 +874,7 @@
           restartTimer();
         });
       });
-      fetch('/assets/hero-carousel-sprite.jpg.b64')
+      fetch('/assets/hero-carousel-sprite.webp.b64')
         .then(function (response) { if (!response.ok) throw new Error('Fotos indisponíveis'); return response.text(); })
         .then(function (encoded) {
           image.style.backgroundImage = 'url("data:image/webp;base64,' + encoded.trim() + '")';
