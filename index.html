@@ -543,7 +543,56 @@
       .mobile-cta-bar a { min-height: 52px; font-size: .96rem; }
       body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
     }
-  </style>
+  
+    .hero-carousel-card {
+      position: relative;
+      width: 100%;
+      max-width: 430px;
+      aspect-ratio: 2 / 3;
+      margin-inline: auto;
+      overflow: hidden;
+      border-radius: 190px 190px 22px 22px;
+      background: #e8e4da;
+      box-shadow: 0 22px 55px rgba(42, 62, 50, .13);
+    }
+    .hero-carousel-image {
+      position: absolute;
+      inset: 0;
+      background-repeat: no-repeat;
+      background-size: 100% 300%;
+      background-position: center 0%;
+      transition: background-position .9s cubic-bezier(.2,.7,.2,1);
+    }
+    .hero-carousel-overlay {
+      position: absolute;
+      inset: auto 0 0;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 58px 22px 20px;
+      color: #fff;
+      background: linear-gradient(transparent, rgba(24, 42, 33, .62));
+    }
+    .hero-carousel-caption { max-width: 230px; font-size: .9rem; line-height: 1.4; font-weight: 600; }
+    .hero-carousel-dots { display: flex; gap: 7px; flex-shrink: 0; }
+    .hero-carousel-dot {
+      width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%;
+      background: rgba(255,255,255,.58); cursor: pointer;
+      transition: transform .2s ease, background .2s ease;
+    }
+    .hero-carousel-dot.is-active { background: #fff; transform: scale(1.3); }
+    .hero-carousel-dot:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+    .hero-carousel-card .hero-stamp { z-index: 2; }
+    @media (max-width: 620px) {
+      .hero-carousel-card { max-width: 360px; border-radius: 150px 150px 18px 18px; }
+      .hero-carousel-overlay { padding: 48px 17px 17px; }
+      .hero-carousel-caption { font-size: .82rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-carousel-image, .hero-carousel-dot { transition: none; }
+    }
+</style>
   <!-- Schema.org: dados estruturados do atendimento profissional -->
   <script type="application/ld+json">
   {
@@ -612,9 +661,19 @@
             <span class="trust-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7h14v14M8 7V4h8v3M9 11h1m4 0h1m-6 4h1m4 0h1"/></svg> Experiência Clínica e Hospitalar </span>
           </div>
         </div>
-        <div class="hero-visual reveal" aria-label="Foto de Izabella Miranda Ferreira, fonoaudióloga">
-          <img class="hero-photo" src="/izabella-profissional.webp" alt="Izabella Miranda Ferreira, Fonoaudióloga formada pela UFMG com atendimento domiciliar em Belo Horizonte" width="864" height="1435" fetchpriority="high" decoding="async">
-          <div class="hero-stamp"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 5V2m-2 2 2-2 2 2"/></svg><span>Cuidado com<br>técnica e afeto</span></div></div>
+        <div class="hero-visual reveal">
+          <div class="hero-carousel-card" aria-label="Registros de atendimentos fonoaudiológicos">
+            <div class="hero-carousel-image" id="hero-carousel-image" role="img" aria-label="Atendimento fonoaudiológico domiciliar com pessoa idosa"></div>
+            <div class="hero-carousel-overlay">
+              <span class="hero-carousel-caption">Cuidado individualizado, no conforto de casa</span>
+              <div class="hero-carousel-dots" role="group" aria-label="Selecionar foto do atendimento">
+                <button type="button" class="hero-carousel-dot is-active" aria-label="Ver foto 1" aria-pressed="true" data-slide="0"></button>
+                <button type="button" class="hero-carousel-dot" aria-label="Ver foto 2" aria-pressed="false" data-slide="1"></button>
+                <button type="button" class="hero-carousel-dot" aria-label="Ver foto 3" aria-pressed="false" data-slide="2"></button>
+              </div>
+            </div>
+            <div class="hero-stamp"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-4.35-7-10.2A4.3 4.3 0 0 1 12 8a4.3 4.3 0 0 1 7 2.8C19 16.65 12 21 12 21Z"/><path d="M12 5V2m-2 2 2-2 2 2"/></svg><span>Cuidado com<br>técnica e afeto</span></div></div>
+          </div>
         </div>
       </div>
     </section>
@@ -827,6 +886,37 @@
         revealElements.forEach(function (element) { observer.observe(element); });
       } else { revealElements.forEach(function (element) { element.classList.add('is-visible'); }); }
     }());
-  </script>
+  
+    (function () {
+      var image = document.getElementById('hero-carousel-image');
+      var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-carousel-dot'));
+      if (!image || !dots.length) return;
+      var current = 0;
+      var timer = null;
+      var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function showSlide(index) {
+        current = (index + 3) % 3;
+        image.style.backgroundPosition = 'center ' + (current * 50) + '%';
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle('is-active', i === current);
+          dot.setAttribute('aria-pressed', i === current ? 'true' : 'false');
+        });
+      }
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          showSlide(Number(dot.getAttribute('data-slide')));
+          if (timer) { clearInterval(timer); timer = null; }
+          if (!reducedMotion) timer = setInterval(function () { showSlide(current + 1); }, 5000);
+        });
+      });
+      fetch('/assets/hero-carousel-sprite.jpg.b64')
+        .then(function (response) { if (!response.ok) throw new Error('Imagem indisponível'); return response.text(); })
+        .then(function (encoded) {
+          image.style.backgroundImage = 'url("data:image/jpeg;base64,' + encoded.trim() + '")';
+          if (!reducedMotion) timer = setInterval(function () { showSlide(current + 1); }, 5000);
+        })
+        .catch(function () { image.style.backgroundImage = 'url("/izabella-profissional.webp")'; });
+    }());
+</script>
 </body>
 </html>
