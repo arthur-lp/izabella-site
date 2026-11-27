@@ -858,7 +858,7 @@
       var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       function showSlide(index) {
         current = (index + 3) % 3;
-        image.style.backgroundPosition = 'center ' + (current * 50) + '%';
+        image.style.backgroundPosition = 'center ' + [100, 0, 50][current] + '%';
         dots.forEach(function (dot, i) {
           dot.classList.toggle('is-active', i === current);
           dot.setAttribute('aria-pressed', i === current ? 'true' : 'false');
