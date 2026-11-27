@@ -874,13 +874,9 @@
           restartTimer();
         });
       });
-      fetch('/assets/hero-carousel-sprite.webp.b64')
-        .then(function (response) { if (!response.ok) throw new Error('Fotos indisponíveis'); return response.text(); })
-        .then(function (encoded) {
-          image.style.backgroundImage = 'url("data:image/webp;base64,' + encoded.trim() + '")';
-          showSlide(0); restartTimer();
-        })
-        .catch(function () { image.style.backgroundImage = 'url("/izabella-profissional.webp")'; });
+      image.style.backgroundImage = 'url("/assets/hero-carousel-sprite.webp")';
+      showSlide(0);
+      restartTimer();
     }());
   </script>
 </body>
