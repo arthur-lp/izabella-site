@@ -454,6 +454,95 @@
       *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
     }
 
+    /* Refinamento visual: primeira dobra mais leve e acolhedora */
+    :root {
+      --color-accent: #BD8064;
+      --color-warm: #F7F6F2;
+      --color-whatsapp: #58BE76;
+    }
+    h1 { font-weight: 600; letter-spacing: -.035em; }
+    .hero {
+      padding-top: 148px;
+      padding-bottom: 68px;
+      background: linear-gradient(135deg, #F8F7F3 0%, #F3F1EB 100%);
+    }
+    .hero-grid { align-items: center; gap: 54px; }
+    .hero-copy { max-width: 680px; }
+    .hero h1 {
+      max-width: 15ch;
+      margin-bottom: 20px;
+      font-size: clamp(2.65rem, 4.5vw, 4rem);
+      line-height: 1.13;
+      font-weight: 600;
+      letter-spacing: -.04em;
+      text-wrap: balance;
+    }
+    .hero h1 em { color: #B9785D; }
+    .hero-copy .lead {
+      max-width: 570px;
+      margin-bottom: 20px;
+      font-size: 1rem;
+      line-height: 1.72;
+    }
+    .hero-trust-line { margin-top: 14px; margin-bottom: 22px; line-height: 1.6; }
+    .hero-actions { gap: 12px; margin-bottom: 24px; }
+    .hero-actions .btn { min-height: 50px; }
+    .trust-row { gap: 8px; }
+    .trust-badge { background: rgba(232,240,236,.72); font-weight: 600; }
+    .hero-visual { min-height: 500px; }
+    .hero-photo { height: 500px; border-radius: 180px 180px 18px 18px; }
+    .hero-stamp { width: 138px; height: 138px; font-size: .75rem; }
+    .mobile-cta-bar {
+      background: rgba(255,255,255,.96);
+      border-top-color: rgba(229,221,211,.8);
+      box-shadow: 0 -8px 28px rgba(48,63,54,.07);
+      backdrop-filter: blur(12px);
+    }
+    .mobile-cta-bar a {
+      background: #58BE76;
+      box-shadow: 0 5px 14px rgba(45,95,79,.12);
+      font-weight: 600;
+      letter-spacing: -.01em;
+    }
+    @media (max-width: 860px) {
+      .hero { padding-top: 112px; padding-bottom: 42px; }
+      .hero-grid { gap: 28px; }
+      .hero-copy { max-width: 680px; }
+      .hero-visual { min-height: 500px; }
+      .hero-photo { height: 480px; }
+    }
+    @media (max-width: 620px) {
+      .container { width: min(var(--container), calc(100% - 40px)); }
+      .nav-wrap { min-height: 68px; }
+      .brand { gap: 10px; }
+      .brand-mark { width: 42px; height: 42px; flex-basis: 42px; border-radius: 12px; }
+      .brand-name { font-size: 1.12rem; }
+      .hero { padding: 104px 0 34px; }
+      .hero-grid { gap: 24px; }
+      .hero h1 {
+        max-width: 17ch;
+        margin-bottom: 17px;
+        font-size: clamp(2.05rem, 9.1vw, 2.65rem);
+        line-height: 1.13;
+        letter-spacing: -.04em;
+      }
+      .hero-copy .lead { margin-bottom: 16px; font-size: .98rem; line-height: 1.62; }
+      .hero-trust-line { margin: 12px 0 20px; font-size: .78rem; line-height: 1.55; }
+      .hero-actions { gap: 10px; margin-bottom: 20px; }
+      .hero-actions .btn { min-height: 49px; }
+      .hero-actions .btn-light { background: rgba(255,255,255,.72); }
+      .trust-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .trust-badge { min-height: 34px; font-size: .68rem; line-height: 1.35; }
+      .hero-visual { min-height: 410px; }
+      .hero-photo { width: 78%; height: 390px; border-radius: 150px 150px 16px 16px; }
+      .hero-stamp { left: 3%; bottom: -5px; width: 112px; height: 112px; padding: 12px; font-size: .64rem; }
+      .hero-stamp svg { width: 23px; height: 23px; }
+      /* A barra fixa já oferece o acesso principal ao WhatsApp no celular. */
+      .whatsapp-float { display: none; }
+      .mobile-cta-bar { padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); }
+      .mobile-cta-bar a { min-height: 52px; font-size: .96rem; }
+      body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+    }
   </style>
   <!-- Schema.org: dados estruturados do atendimento profissional -->
   <script type="application/ld+json">
@@ -507,7 +596,7 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           
-          <h1 id="hero-title">Fonoaudióloga em Belo Horizonte: <em>atendimento domiciliar para adultos e idosos.</em></h1>
+          <h1 id="hero-title">Fonoaudióloga em Belo Horizonte <em>com atendimento domiciliar para adultos e idosos.</em></h1>
           <p class="lead">Atendimento domiciliar para adultos e idosos, com atuação em disfagia, reabilitação após AVC e condições neurológicas, voz e comunicação. Graduação pela UFMG e Residência Hospitalar em Saúde do Adulto e Idoso pelo Hospital Risoleta Tolentino Neves.</p>
           <p class="hero-trust-line">Atendimento domiciliar em Belo Horizonte · Adultos e idosos · Cuidado individualizado</p>
           <div class="hero-actions">
